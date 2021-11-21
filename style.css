@@ -26,13 +26,14 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: auto;
-    margin: 4vh;
 }
 
-.courses, .exercises {
+.courses, .exercises, .home{
     position: relative;
+    float: left;
+    margin: 3vh;
 }
 
 .courses ul, .exercises ul {

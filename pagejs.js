@@ -12,3 +12,11 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
