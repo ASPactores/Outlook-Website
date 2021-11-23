@@ -5,7 +5,8 @@
 }
 
 html, body {
-    height: 100%
+    height: 100vh;
+    width: 100%;
 }
 
 nav {
@@ -14,7 +15,7 @@ nav {
 }
 
 body {
-    background-color: aquamarine;
+    background-color: white;
 }
 
 /*-----NAVBAR-----*/
@@ -37,7 +38,11 @@ body {
 .home, .courses, .exercises{
     position: relative;
     float: left;
-    margin: 3vh;
+    margin: 2vh;
+}
+
+.home {
+    margin-top: 4vh;
 }
 
 .courses ul, .exercises ul {
@@ -64,21 +69,23 @@ body {
     color: #5D001E;
 }
 
-.dropdown button,
+.navtext,
 .linkhome {
     background: none;
     color: #5D001E;
     border: none;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
 .dropdown button {
     margin-right: 25px;
 }
 
-.dropdown button:hover, .linkhome:hover {
+.navtext:hover, .linkhome:hover {
     color: rgb(163, 162, 162);
 }
 
@@ -89,6 +96,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font: bold 15px "Source San Pro", sans-serif;
 }
 
 .courses li:hover,
@@ -104,13 +112,73 @@ body {
     transform: translateY(0px);
 }
 
+.login-btn {
+    float: right;
+    margin: 8px 20px 0px 0px;
+}
+
+.log-in {
+    padding: 10px 20px;
+    border-radius: 15px;
+    font: bold 18px Helvetica, sans-serif;
+    text-align: center;
+    color: #5D001E;
+    background-color: white;
+    border: 3px solid #5D001E;
+}
+
+.log-in:hover {
+    background-color: #5D001E;
+    color: white;
+    cursor: pointer;
+}
+
 /*-----Header-----*/
 .banner-area {
-    margin: 0%;
     width: 100%;
-    height: 100vh;
-    background-image: url("../images/laptop.png");
+    height: 250px;
+    background-image: linear-gradient(0deg, rgba(93, 0, 29, 0.4), rgba(93, 0, 29, 0.8)), url("../images/laptop.jpg");
     background-size: cover;
 }
 
+.content-area {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.btn {
+    border-radius: 12px;
+    background-color: rgb(238, 76, 125);
+    border: none;
+    padding: 12px;
+    margin: 12px;
+    font: bold 15px "Source San Pro", sans-serif;
+    color:rgb(255, 255, 255);
+}
+
+.content h1 {
+    font: bold 75px "Bebas Neue", sans-serif;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font: 15px "Source San Pro", sans-serif;
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    background-color:rgba(93, 0, 29, 0.8);
+    cursor: pointer;    
+}
 /*-----Body-----*/
