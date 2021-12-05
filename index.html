@@ -7,42 +7,47 @@
         <title>Outlook! Homepage</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <div class="dropdown">
                 <div class="logo">
-                    <a href="index.html">
+                    <a class="logo-link" href="index.html">
                         <img src="images/logo.png" alt="OUTLOOK!">
                     </a>
                 </div>            
             <nav>
-                <div class="home">
-                    <button class="navtext"><a href="index.html" class="linkhome">HOME</a></button>
-                </div>                
                 <div class="courses">
                     <button class="navtext">COURSES<i class="material-icons">arrow_drop_down</i></button>
                     <ul>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">Java</a></li>
+                        <li><a href="#">PYTHON</a></li>
+                        <li><a href="#">JAVA</a></li>
                         <li><a href="#">HTML</a></li>
-                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
                         <li><a href="#">CSS</a></li>
                     </ul>
                 </div>
                 <div class="exercises">
                     <button class="navtext">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
                     <ul>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">Java</a></li>
+                        <li><a href="#">PYTHON</a></li>
+                        <li><a href="#">JAVA</a></li>
                         <li><a href="#">HTML</a></li>
-                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
                         <li><a href="#">CSS</a></li>
                     </ul>
                 </div>
                 <div class="login-btn">
                     <button class="log-in"><p>LOG IN</p></button>
+                </div>
+                <div class="searchbar">
+                    <form action="https://www.google.com/">
+                        <input type="text" placeholder="Search..." class="searchbar-inp">
+                    </form>
+                    <button><i class="material-icons">search</i></button>                                       
                 </div>
             </nav>
             </div>
@@ -58,6 +63,73 @@
                 </div>
             </div>
         </header>
+        <section>
+            <div class="webdev">
+                <h2>START YOUR CAREER IN WEB DEVELOPMENT</h2>
+                <div class="vidcar">
+                    <div class="col-md-12">
+                        <iframe width="420" height="252" src="https://www.youtube.com/embed/UB1O30fR-EE" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe width="420" height="252" src="https://www.youtube.com/embed/yfoY53QXEnI" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe width="420" height="252" src="https://www.youtube.com/embed/hdI2bqOjy3c" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe width="420" height="252" src="https://www.youtube.com/embed/hdI2bqOjy3c" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe width="420" height="252" src="https://www.youtube.com/embed/w7ejDZ8SWv8" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe width="420" height="252" src="https://www.youtube.com/embed/mTz0GXj8NN0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe width="420" height="252" src="https://www.youtube.com/embed/qZXt1Aom3Cs" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Made in the Philippines with LOVE. &#169; 2021 OUTLOOK!</p>
+        </footer>
+
+        <!--Javascript-->
+        <!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script text="text/javascript">
+            $(document).ready(function(){
+                $('.vidcar').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+                });
+			
+            });
+        </script>
+    -->
     </body>
 
 </html>

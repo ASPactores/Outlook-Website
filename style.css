@@ -12,6 +12,7 @@ html, body {
 nav {
     background-color: white;
     width: 100%;
+    float: left;
 }
 
 body {
@@ -22,8 +23,11 @@ body {
 
 .logo img {
     height: 50px;
-    bottom: 86vh;
-    margin: 3vh;
+    margin: 10px 25px 10px 10px;
+}
+
+.logo-link {
+    float: left;
 }
 
 .dropdown {
@@ -35,21 +39,17 @@ body {
     height: auto;
 }
 
-.home, .courses, .exercises{
+.courses, .exercises{
     position: relative;
     float: left;
-    margin: 2vh;
-}
-
-.home {
-    margin-top: 4vh;
+    margin: 25px 20px;
 }
 
 .courses ul, .exercises ul {
     position: absolute;
     left: 0px;
     background: white;
-    margin-top: 10px;
+    margin-top: 45px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -69,8 +69,7 @@ body {
     color: #5D001E;
 }
 
-.navtext,
-.linkhome {
+.navtext {
     background: none;
     color: #5D001E;
     border: none;
@@ -79,13 +78,11 @@ body {
     cursor: pointer;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
+    float: left;
+    margin-right: 15px;
 }
 
-.dropdown button {
-    margin-right: 25px;
-}
-
-.navtext:hover, .linkhome:hover {
+.navtext:hover {
     color: rgb(163, 162, 162);
 }
 
@@ -95,14 +92,13 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 20px;
     font: bold 15px "Source San Pro", sans-serif;
 }
 
 .courses li:hover,
 .exercises li:hover {
     background-color: rgb(226, 226, 226);
-
 }
 
 .courses button:focus + ul,
@@ -112,9 +108,34 @@ body {
     transform: translateY(0px);
 }
 
+.searchbar {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.searchbar .material-icons {
+    font-size: 35px;
+    color: #5D001E;
+    margin: 0px 8px;
+}
+
+.searchbar-inp {
+    padding: 8px;
+    border: 2px solid #5D001E;
+    border-radius: 10px;
+}
+
+.searchbar button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .login-btn {
     float: right;
-    margin: 8px 20px 0px 0px;
+    margin: 15px 40px 0px 0px;
 }
 
 .log-in {
@@ -137,7 +158,7 @@ body {
 .banner-area {
     width: 100%;
     height: 250px;
-    background-image: linear-gradient(0deg, rgba(93, 0, 29, 0.4), rgba(93, 0, 29, 0.8)), url("../images/laptop.jpg");
+    background-image: linear-gradient(0deg, rgba(93, 0, 29, 0.4), rgba(93, 0, 29, 0.8)), url("./images/laptop.jpg");
     background-size: cover;
 }
 
@@ -182,3 +203,24 @@ body {
     cursor: pointer;    
 }
 /*-----Body-----*/
+
+/*-----Carousel-----*/
+.webdev {
+    margin-top: 25px;
+}
+
+.webdev h2 {
+    text-align: center;
+}
+
+.vidcar {
+    list-style-type: none;
+    margin: 5px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.vidcar iframe {
+    border: none;
+    margin: 5px;
+}
