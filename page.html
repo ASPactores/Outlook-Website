@@ -4,7 +4,48 @@
         <link rel="stylesheet" href="pagecss.css">
     </head>
     <body>
-        <p>Language 1:</p>
+
+    <!-- Header -->
+    <header>
+        <div class="dropdown">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="OUTLOOK!">
+                </a>
+            </div>            
+        <nav>
+            <div class="home">
+                <button><a href="index.html" class="linkhome">HOME</a></button>
+            </div>                
+            <div class="courses">
+                <button>COURSES</button>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">CSS</a></li>
+                </ul>
+            </div>
+            <div class="exercises">
+                <button>EXERCISES</button>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">CSS</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <!-- Header -->
+    
+    <div class = "body1">
+
+    <!-- Drop-down Topics -->
+        <p class = "langtitles">Language 1:</p>
         <button class="collapsible">Python</button>
         <div class="content">
             <button class="button buttonblack">Topic 1</button>
@@ -12,7 +53,7 @@
             <button class="button buttonblack">Topic 3</button>        
         </div>
         
-        <p>Language 2:</p>
+        <p class = "langtitles">Language 2:</p>
         <button class="collapsible">C</button>
         <div class="content">
             <button class="button buttonblack">Topic 1</button>
@@ -20,13 +61,17 @@
             <button class="button buttonblack">Topic 3</button>
         </div>
             
-        <p>Language 3:</p>
+        <p class = "langtitles">Language 3:</p>
         <button class="collapsible">C++</button>
         <div class="content">
             <button class="button buttonblack">Topic 1</button>
             <button class="button buttonblack">Topic 2</button>
             <button class="button buttonblack">Topic 3</button>
         </div>
+        
+    <!-- Drop-down Topics -->
+    
+    <!-- Sidebar Navigator -->
         
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -36,10 +81,15 @@
             <a href="#">Contact</a>
           </div>
 
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <button class="button buttonside" id="openButton" onclick="openNav()">&lt;</button>
 
-        <button class="button buttonblack">owo</button>
+    <!-- Sidebar Navigator -->
+    
+    </div>
+    
+    <footer>
 
+    </footer>
 
         <script src="pagejs.js"></script>
     </body>
