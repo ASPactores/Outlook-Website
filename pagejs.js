@@ -15,8 +15,10 @@ for (i = 0; i < coll.length; i++) {
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("openButton").style.visibility = "hidden";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("openButton").style.visibility = "visible";
 }

@@ -22,7 +22,7 @@ body{
   display: flex;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 15%;
 }
 
 .home, .courses, .exercises{
@@ -118,36 +118,24 @@ body{
     background-color: #000000;
     border: none;
     color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px 10px 10%;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 20%;
   }
-.buttonside{
-  position: fixed;
-  right: 0px;
-  top: 50%;
-  font-size:20px;
-  cursor:pointer;
-  width: 2%;
-  height: 10%;
-  color: white;
-}
 
-.buttonside:hover {
-  background-color: #5a5656;
-  color: white;
-}
+  .buttonblack {
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px 10px 10%;
+      width: 20%;
+    }
 
-.buttonblack:hover {
-    background-color: #5a5656;
-    color: white;
-  }
+  .buttonblack:hover {
+      background-color: #5a5656;
+      color: white;
+    }
 
 .content {
     padding: 0 18px;
@@ -180,12 +168,6 @@ body{
     margin-left: 5px;
   }
 
-  @media screen and (max-width: 800px) {
-    .button{
-      width: 100%; 
-    }
-  }
-
 /*-----Drop-down Topics-----*/
 
 .body1{
@@ -195,12 +177,33 @@ body{
 
 /*-----Side Navigator-----*/
 
+.buttonside{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  font-size:3vh;
+  cursor:pointer;
+  width: 60px;
+  height: 10%;
+  color: white;
+  padding-right: 0 5%;
+}
+
+.buttonside:active {
+  visibility: hidden;
+}
+
+.buttonside:hover {
+  background-color: #5a5656;
+  color: white;
+}
+
 .sidenav {
   height: inherit;
   width: 0;
   position: absolute;
   z-index: 1;
-  top: 93px;
+  top: 15%;
   right: 0;
   background-color: #111;
   overflow-x: hidden;
@@ -229,9 +232,26 @@ body{
   margin-left: 50px;
 }
 
+/*-----Side Navigator-----*/
+
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {
+    padding-top: 15px;
+  }
   .sidenav a {font-size: 18px;}
 }
 
-/*-----Side Navigator-----*/
+@media screen and (max-width: 800px) {
+  .button{
+    width: 100%; 
+  }
+
+  .buttonblack {
+    margin: 10px 0 10px 0;
+  }
+  
+  .buttonside{
+    top: 89%;
+    padding-right: 0;
+  }
+}
