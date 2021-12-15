@@ -17,7 +17,6 @@ nav {
 
 body {
     background-color: white;
-    margin-bottom: 100px;
 }
 
 /*-----NAVBAR-----*/
@@ -212,15 +211,22 @@ body {
 
 .webdev h2 {
     text-align: center;
-    color: rgb(93, 0, 29);
-    font: bold 50px "Bebas Neue", sans-serif;
 }
 
 .vidcar {
-    list-style-type: none;
-    margin: 15px 5px 5px 5px;
-    display: flex;
-    overflow-x: scroll;
+    width: 60%;
+    height: 445px;
+    margin: 20px auto 0;
+    position: relative;
+    /*display: flex;
+    overflow-x: scroll;*/
+}
+
+.vidcarcontainer {  
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 0;
 }
 
 .carouselvids {
@@ -284,7 +290,7 @@ body {
     height: 20px;
     background-color: rgba(0,0,0,0.3);
     margin: 5px;
-<<<<<<< HEAD
+    cursor: pointer;
 }
 
 /*-----Footer-----*/
@@ -416,7 +422,6 @@ body {
     color:rgb(238, 76, 125);
     font-size: 20px;
 }
-=======
 
 @media screen and (max-width: 800px) {
     .carbutt{
@@ -466,4 +471,3 @@ body {
     }
 }
 */
->>>>>>> 29a9f13fab50311cd530e8bda181ae69a0bd78c4

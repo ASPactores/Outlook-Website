@@ -1,4 +1,3 @@
-console.log("Anakin");
 const track = document.querySelector('.vidcartrack');
 const slides = Array.from(track.children);
 const prevbutton = document.querySelector('.carouselbuttonleft');
