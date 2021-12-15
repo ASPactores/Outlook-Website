@@ -22,3 +22,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("openButton").style.visibility = "visible";
 }
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "dropdown") {
+    x.className += " responsive";
+  } else {
+    x.className = "dropdown";
+  }
+}
