@@ -5,11 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "label": "build g",
+            "type": "shell",
+            "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+            "args": ["-g", "-o", "${fileBasenameNoExtension}", "${fileBasename}"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
