@@ -217,26 +217,10 @@ body {
 }
 
 .vidcar {
-<<<<<<< HEAD
     list-style-type: none;
     margin: 15px 5px 5px 5px;
     display: flex;
     overflow-x: scroll;
-=======
-    width: 60%;
-    height: 445px;
-    margin: 20px auto 0;
-    position: relative;
-    /*display: flex;
-    overflow-x: scroll;*/
-}
-
-.vidcarcontainer {  
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    padding-top: 0;
->>>>>>> 29a9f13fab50311cd530e8bda181ae69a0bd78c4
 }
 
 .carouselvids {
@@ -433,8 +417,6 @@ body {
     font-size: 20px;
 }
 =======
-    cursor: pointer;
-}
 
 @media screen and (max-width: 800px) {
     .carbutt{
