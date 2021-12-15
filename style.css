@@ -5,7 +5,7 @@
 }
 
 html, body {
-    height: 100vh;
+    min-height: 100%;
     width: 100%;
 }
 
@@ -17,6 +17,7 @@ nav {
 
 body {
     background-color: white;
+    margin-bottom: 100px;
 }
 
 /*-----NAVBAR-----*/
@@ -211,11 +212,13 @@ body {
 
 .webdev h2 {
     text-align: center;
+    color: rgb(93, 0, 29);
+    font: bold 50px "Bebas Neue", sans-serif;
 }
 
 .vidcar {
     list-style-type: none;
-    margin: 5px;
+    margin: 15px 5px 5px 5px;
     display: flex;
     overflow-x: scroll;
 }
@@ -223,4 +226,134 @@ body {
 .vidcar iframe {
     border: none;
     margin: 5px;
+}
+
+/*-----Footer-----*/
+.foot-container {
+    background-color: rgb(37, 37, 37);
+    min-width: 100%;
+    padding: 30px 20px;
+    min-height: 280px;
+}
+
+.foot-row {
+    position: relative;
+}
+
+.foot-col {
+    width: 570px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 25px;
+}
+
+.foot-col ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-col li {
+    list-style-type: none;
+    font: 13px poppins, sans-serif;
+    font-weight: 700;
+}
+
+.foot-col li a {
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter-header h3 {
+    text-align: center;
+    position: absolute;
+    margin-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font: bold 13px poppins, sans-serif;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+}
+
+.newsletter-container input {
+    padding: 8px;
+    background-color: rgb(37, 37, 37);
+    border: 1px solid white;
+    font: bold 13px poppins, sans-serif;
+    color: white;
+}
+
+.newsletter-container input:focus {
+    outline: none;
+}
+
+.newsletter-button button {
+    border: none;
+    background-color: rgb(238, 76, 125);
+    padding: 10px 25px;
+    font: 600 13px poppins, sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.newsletter-button button:hover {
+    background-color: rgb(93, 0, 29);
+}
+
+.socmed-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 180px;
+}
+
+.socmed-container h3 {
+    color: white;
+    font: bold 13px poppins, sans-serif;
+    text-align: center;
+}
+
+.socmed {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.socmed i {
+    font-size: 25px;
+    margin: 15px 10px 0px;
+    color: white;
+}
+
+.copyright {
+    background-color: rgb(72, 74, 78);
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.where-made, .copyright-symbol {
+    font: bold 13px poppins, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.where-made span {
+    color:rgb(238, 76, 125);
+    font-size: 20px;
 }
