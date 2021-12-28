@@ -20,24 +20,30 @@
                 </div>            
             <nav>
                 <div class="courses">
-                    <button class="navtext">COURSES<i class="material-icons">arrow_drop_down</i></button>
-                    <ul>
-                        <li><a href="#">PYTHON</a></li>
-                        <li><a href="#">JAVA</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">JAVASCRIPT</a></li>
-                        <li><a href="#">CSS</a></li>
-                    </ul>
+                    <button class="navtext" onclick="dropdownApp()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                    <div id="navtext-content" class="navtext-content">
+                        <ul>
+                            <li><a href="#">PYTHON</a></li>
+                            <li><a href="#">JAVA</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">JAVASCRIPT</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li class="viewpage"><a href="/pages/page.html" target="_blank">View All Courses</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="exercises">
-                    <button class="navtext">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
-                    <ul>
-                        <li><a href="#">PYTHON</a></li>
-                        <li><a href="#">JAVA</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">JAVASCRIPT</a></li>
-                        <li><a href="#">CSS</a></li>
-                    </ul>
+                    <button class="navtext" onclick="dropdownApp()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                    <div id="navtext-content" class="navtext-content">
+                        <ul>
+                            <li><a href="#">PYTHON</a></li>
+                            <li><a href="#">JAVA</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">JAVASCRIPT</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li class="viewpage"><a href="/pages/page.html" target="_blank">View All Courses</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="login-btn">
                     <button class="log-in"><p>LOG IN</p></button>
@@ -62,7 +68,7 @@
                 </div>
             </div>
         </header>
-        <section>
+        <section class="carousel">
             <div class="webdev">
                 <h2>START YOUR CAREER IN WEB DEVELOPMENT</h2>
                 <div class="vidcar">
@@ -126,6 +132,20 @@
                     </div>
                 </div>
         </section>
+        <!--
+        <section class="programming-lang">
+            <div class="prog-lang-bg">
+                <div class="prog-lang-container">
+                    <ul class="prog-lang">
+                        <li><button><a href="#">PYTHON</a></button></li>
+                        <li><button><a href="#">JAVASCRIPT</a></button></li>
+                        <li><button><a href="#">JAVA</a></button></li>
+                        <li><button><a href="#">C</a></button></li>
+                    </ul>
+                   </div>
+            </div>
+        </section>
+    -->
         <footer>
             <div class="foot-container">
                 <div class="foot-row">

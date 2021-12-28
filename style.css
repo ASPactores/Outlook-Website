@@ -39,6 +39,12 @@ body {
     height: auto;
 }
 
+.navtext-content {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
 .courses, .exercises{
     position: relative;
     float: left;
@@ -58,7 +64,6 @@ body {
     flex-direction: column;
     list-style: none;
     border-radius: 5px;
-    opacity: 0;
     pointer-events: none;
     transition: all 0.4s ease;
     transform: translateY(-10px);
@@ -67,6 +72,8 @@ body {
 .courses a, .exercises a {
     text-decoration: none;
     color: #5D001E;
+    width: 100%;
+
 }
 
 .navtext {
@@ -80,6 +87,17 @@ body {
     font-weight: bold;
     float: left;
     margin-right: 15px;
+}
+
+.viewpage {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    background-color: rgba(93, 0, 29, 0.8);
+    color: white;
+}
+
+.viewpage a {
+    color: white;
 }
 
 .navtext:hover {
@@ -101,18 +119,30 @@ body {
     background-color: rgb(226, 226, 226);
 }
 
+.show {
+    opacity: 1;
+    z-index: 100;
+    position: absolute;
+}
+
+/*
 .courses button:focus + ul,
 .exercises button:focus + ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
 }
+*/
 
 .searchbar {
     float: right;
     display: flex;
     align-items: center;
     margin-top: 22px;
+}
+
+.searchbar input {
+    font: bold 15px "Source San Pro", sans-serif;
 }
 
 .searchbar .material-icons {
@@ -206,11 +236,17 @@ body {
 
 /*-----Carousel-----*/
 .webdev {
-    margin-top: 25px;
+    margin: 25px;
+}
+
+.carousel {
+    margin-bottom: 50px;
 }
 
 .webdev h2 {
     text-align: center;
+    font: bold 30px "Source Sans Pro", sans-serif;
+    color: rgb(93, 0, 29);
 }
 
 .vidcar {
@@ -281,17 +317,57 @@ body {
 .carouselnavigator {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .carouselindicator {
     border: 0;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0,0,0,0.3);
+    width: 15px;
+    height: 15px;
+    background-color: rgba(134, 16, 16, 0.3);
     margin: 5px;
     cursor: pointer;
 }
+
+/*-----PROGRAMMING LANGUAGES-----
+.prog-lang-bg {
+    min-width: 100%;
+    height: 125px;
+    background-color: rgba(95, 13, 13, 0.781);
+    display: flex;
+}
+
+.prog-lang-container {
+    margin: auto;
+}
+
+.prog-lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+    flex-direction: row;
+}
+
+.prog-lang li {
+    background-color: rgb(238, 76, 125);
+    border: none;
+    padding: 20px 40px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.prog-lang li button {
+    background-color: none;
+    border: none;
+    width: 100%;
+}
+
+--------------*/
 
 /*-----Footer-----*/
 .foot-container {
@@ -433,7 +509,7 @@ body {
 .ishidden { display: none; }
 
 .carouselindicator.currentslide {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(95, 13, 13, 0.781);
 }
 /*
 @media screen and (max-width: 1200px) {

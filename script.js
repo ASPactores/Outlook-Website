@@ -1,3 +1,4 @@
+
 const track = document.querySelector('.vidcartrack');
 const slides = Array.from(track.children);
 const prevbutton = document.querySelector('.carouselbuttonleft');
@@ -6,6 +7,10 @@ const dotsnav = document.querySelector('.carouselnavigator');
 const dots = Array.from(dotsnav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 console.log(slides);
+
+function dropdownApp() {
+    document.getElementById("navtext-content").classList.toggle("show");
+}
 
 console.log(slideWidth);
 /*
