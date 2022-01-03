@@ -369,6 +369,61 @@ body {
 
 --------------*/
 
+.prog-overview {
+    width: 100%;
+    display: flex;
+    background-color: #5D001E;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.prog-text-box {
+    background-color: crimson;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.prog-text-container ul {
+    text-align: center;
+}
+
+.prog-text-container li {
+    list-style-type: none;
+}
+
+.prog-text-container h1, .prog-text-container p {
+    font-family: "Source San Pro", sans-serif;
+    color: white;
+    padding: 5px 5px;
+}
+
+.prog-text-container button a {
+    color: white;
+    text-decoration: none;
+}
+
+.prog-text-container button {
+    background-color: #5D001E;
+    padding: 10px;
+    border: none;
+    font: bold 15px "Source San Pro", sans-serif;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.prog-text-container button:hover {
+    background-color: #6e0627;
+}
+
+
+
 /*-----Footer-----*/
 .foot-container {
     background-color: rgb(37, 37, 37);
@@ -547,3 +602,14 @@ body {
     }
 }
 */
+
+@media screen and (max-width: 700px) {
+    .prog-overview {
+        display: block;
+        width: 100%;
+    }
+
+    .prog-text-box {
+        width: 100%;
+    }
+}
