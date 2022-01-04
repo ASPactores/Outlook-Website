@@ -1,97 +1,204 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Outlook! Homepage</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="pagecss.css">
     </head>
     <body>
 
     <!-- Header -->
-    <header>
-        <div class="dropdown" id="myTopNav">
+
+    <header id="blurHead">
+        <div class="dropdown">
             <div class="logo">
-                <a href="index.html">
+                <a class="logo-link" href="index.html">
                     <img src="images/logo.png" alt="OUTLOOK!">
                 </a>
             </div>            
-        <nav>            
+        <nav>
             <div class="courses">
-                <button>COURSES</button>
+                <button class="navtext">COURSES<i class="material-icons">arrow_drop_down</i></button>
                 <ul>
-                    <li><a href="#">Python</a></li>
-                    <li><a href="#">Java</a></li>
+                    <li><a href="#">PYTHON</a></li>
+                    <li><a href="#">JAVA</a></li>
                     <li><a href="#">HTML</a></li>
-                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
                     <li><a href="#">CSS</a></li>
+                    <li><a href="page.html">COURSE PAGE</a></li>
                 </ul>
             </div>
             <div class="exercises">
-                <button>EXERCISES</button>
+                <button class="navtext">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
                 <ul>
-                    <li><a href="#">Python</a></li>
-                    <li><a href="#">Java</a></li>
+                    <li><a href="#">PYTHON</a></li>
+                    <li><a href="#">JAVA</a></li>
                     <li><a href="#">HTML</a></li>
-                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
                     <li><a href="#">CSS</a></li>
                 </ul>
             </div>
-            <div class="iconclass">
-                <button class="button buttonside" id="icon" onclick="myFunction()">&lt;</button>
+            <div class="login-btn">
+            <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
             </div>
+            <div class="searchbar">
+                <form action="https://www.google.com/">
+                    <input type="text" placeholder="Search..." class="searchbar-inp">
+                </form>
+                <button><i class="material-icons">search</i></button>                                       
             </div>
-        </nav>  
+        </nav>
+        </div>
+        <div class="banner-area">
+            <div class="content-area">
+                <div class="content">
+                    <h1>GET STARTED</h1>
+                    <p>
+                        Place proper text here.
+                    </p>
+                    <button class="btn">START YOUR JOURNEY</button>
+                </div>
+            </div>
+        </div>
     </header>
+
     <!-- Header -->
     
-    <div class = "body1">
+    <div class = "body1" id="blurBody">
 
     <!-- Drop-down Topics -->
-        <p class = "langtitles">Language 1:</p>
-        <button class="collapsible">Python</button>
+    
+        <div class="languages">
+        <button class="collapsible">PYTHON</button>
         <div class="content">
-            <button class="button buttonblack">Topic 1</button>
-            <button class="button buttonblack">Topic 2</button>
-            <button class="button buttonblack">Topic 3</button>        
+            <button class="button buttonblack"><h4>TOPIC 1: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 2: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 3: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 4: </h4><p>Fox jumps over the moon.</p></button>
+            <a href="#" class="seemore">SEE MORE</a>        
         </div>
-        
-        <p class = "langtitles">Language 2:</p>
+        </div>
+
+        <div class="languages">
         <button class="collapsible">C</button>
         <div class="content">
-            <button class="button buttonblack">Topic 1</button>
-            <button class="button buttonblack">Topic 2</button>
-            <button class="button buttonblack">Topic 3</button>
+            <button class="button buttonblack"><h4>TOPIC 1: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 2: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 3: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 4: </h4><p>Fox jumps over the moon.</p></button>
+            <a href="#" class="seemore">SEE MORE</a>        
         </div>
-            
-        <p class = "langtitles">Language 3:</p>
+        </div>
+
+        <div class="languages">
         <button class="collapsible">C++</button>
         <div class="content">
-            <button class="button buttonblack">Topic 1</button>
-            <button class="button buttonblack">Topic 2</button>
-            <button class="button buttonblack">Topic 3</button>
+            <button class="button buttonblack"><h4>TOPIC 1: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 2: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 3: </h4><p>Fox jumps over the moon.</p></button>
+            <button class="button buttonblack"><h4>TOPIC 4: </h4><p>Fox jumps over the moon.</p></button>
+            <a href="#" class="seemore">SEE MORE</a>        
         </div>
-        
+        </div>
+
     <!-- Drop-down Topics -->
     
     <!-- Sidebar Navigator -->
-        
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
+        <div class="navcontainer">
+        <aside id="mySidenav" class="sidenav">
+            <div class="sideheading">
+                <h3>SIDE MENU</h3>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <a href="#" class="sidemenu">Option 1</a>
+            <a href="#" class="sidemenu">Option 2</a>
+            <a href="#" class="sidemenu">Option 3</a>
+            <a href="#" class="sidemenu">Option 4</a>
+        </aside>
 
         <button class="button buttonside" id="openButton" onclick="openNav()">&lt;</button>
-
+        </div>>
     <!-- Sidebar Navigator -->
     
     </div>
     
-    <footer>
+    <!-- Footear -->
 
+    <footer id="blurFooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved. 
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
     </footer>
 
-        <script src="pagejs.js"></script>
+    <!-- Footer -->
+
+    <!-- Javascript -->
+
+    <script src="pagejs.js"></script>
+    
+    <!-- Javascript -->
+
+    <!-- Pop-up Form -->
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!-- Pop-up Form -->
+    
     </body>
 </html>

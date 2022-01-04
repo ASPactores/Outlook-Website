@@ -1,4 +1,4 @@
-var coll = document.getElementsByClassName("collapsible");
+             var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -30,4 +30,16 @@ function myFunction() {
   } else {
     x.className = "dropdown";
   }
+}
+
+function toggleForm() {
+  var blur1 = document.getElementById('blurHead');
+  var blur2 = document.getElementById('blurBody');
+  var blur3 = document.getElementById('blurFooter');
+  var popup = document.getElementById('myForm');
+  blur1.classList.toggle('active');
+  blur2.classList.toggle('active');
+  blur3.classList.toggle('active');
+  popup.classList.toggle('active');
+  console.log(blur3);
 }

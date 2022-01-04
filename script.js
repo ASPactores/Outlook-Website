@@ -1,4 +1,3 @@
-
 const track = document.querySelector('.vidcartrack');
 const slides = Array.from(track.children);
 const prevbutton = document.querySelector('.carouselbuttonleft');
@@ -6,13 +5,11 @@ const nextbutton = document.querySelector('.carouselbuttonright');
 const dotsnav = document.querySelector('.carouselnavigator');
 const dots = Array.from(dotsnav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
-console.log(slides);
 
 function dropdownApp() {
     document.getElementById("navtext-content").classList.toggle("show");
 }
 
-console.log(slideWidth);
 /*
 slides[0].style.left = 0;
 slides[1].style.left = slideWidth * 1 + 'px';
@@ -86,3 +83,16 @@ dotsnav.addEventListener('click', e => {
     updatedots(currentdot, targetdot);
     hideshow(slides, prevbutton, nextbutton, targetindex);
 })
+
+function toggleForm() {
+    var blur1 = document.getElementById('blurHead');
+    var blur2 = document.getElementById('blurBody');
+    var blur3 = document.getElementById('vidBlur');
+    var blur4 = document.getElementById('blurFooter');
+    var popup = document.getElementById('myForm');
+    blur1.classList.toggle('active');
+    blur2.classList.toggle('active');
+    blur3.classList.toggle('active');
+    blur4.classList.toggle('active');
+    popup.classList.toggle('active');
+  }

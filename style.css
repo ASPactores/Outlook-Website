@@ -5,7 +5,7 @@
 }
 
 html, body {
-    min-height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -21,37 +21,49 @@ body {
 
 /*-----NAVBAR-----*/
 
-.logo img {
+
+header.active{
+    filter: blur(20px);
+    transition: 0.5s;
+  }
+  
+  .body1.active{
+    filter: blur(20px);
+    transition: 0.5s;
+  }
+  
+  footer.active{
+    filter: blur(20px);
+    transition: 0.5s;
+  }
+  
+  /*-----Header-----*/
+  
+  .logo img {
     height: 50px;
     margin: 10px 25px 10px 10px;
-}
-
-.logo-link {
+  }
+  
+  .logo-link {
     float: left;
-}
-
-.dropdown {
+  }
+  
+  .dropdown {
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
-}
-
-.navtext-content {
-    position: absolute;
-    opacity: 0;
-    z-index: 2;
-}
-
-.courses, .exercises{
+  }
+  
+  .courses, .exercises{
     position: relative;
     float: left;
     margin: 25px 20px;
-}
-
-.courses ul, .exercises ul {
+  }
+  
+  .courses ul, .exercises ul {
     position: absolute;
     left: 0px;
     background: white;
@@ -64,19 +76,17 @@ body {
     flex-direction: column;
     list-style: none;
     border-radius: 5px;
-    pointer-events: none;
+    opacity: 0;
     transition: all 0.4s ease;
     transform: translateY(-10px);
-}
-
-.courses a, .exercises a {
+  }
+  
+  .courses a, .exercises a {
     text-decoration: none;
     color: #5D001E;
-    width: 100%;
-
-}
-
-.navtext {
+  }
+  
+  .navtext {
     background: none;
     color: #5D001E;
     border: none;
@@ -87,88 +97,69 @@ body {
     font-weight: bold;
     float: left;
     margin-right: 15px;
-}
-
-.viewpage {
-    text-decoration: underline;
-    padding-bottom: 5px;
-    background-color: rgba(93, 0, 29, 0.8);
-    color: white;
-}
-
-.viewpage a {
-    color: white;
-}
-
-.navtext:hover {
+  }
+  
+  .navtext:hover {
     color: rgb(163, 162, 162);
-}
-
-.courses li,
-.exercises li {
+  }
+  
+  .courses li,
+  .exercises li {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     padding-left: 20px;
     font: bold 15px "Source San Pro", sans-serif;
-}
+  }
 
-.courses li:hover,
-.exercises li:hover {
+  .showlist {
+    display: flex;
+  }
+  
+  .courses li:hover,
+  .exercises li:hover {
     background-color: rgb(226, 226, 226);
-}
-
-.show {
-    opacity: 1;
-    z-index: 100;
-    position: absolute;
-}
-
-/*
-.courses button:focus + ul,
-.exercises button:focus + ul {
+  }
+  
+  .courses button:focus + ul,
+  .exercises button:focus + ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
-}
-*/
-
-.searchbar {
+  }
+  
+  .searchbar {
     float: right;
     display: flex;
     align-items: center;
     margin-top: 22px;
-}
-
-.searchbar input {
-    font: bold 15px "Source San Pro", sans-serif;
-}
-
-.searchbar .material-icons {
+  }
+  
+  .searchbar .material-icons {
     font-size: 35px;
     color: #5D001E;
     margin: 0px 8px;
-}
-
-.searchbar-inp {
+  }
+  
+  .searchbar-inp {
     padding: 8px;
     border: 2px solid #5D001E;
     border-radius: 10px;
-}
-
-.searchbar button {
+  }
+  
+  .searchbar button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
-
-.login-btn {
+  }
+  
+  .login-btn {
     float: right;
     margin: 15px 40px 0px 0px;
-}
-
-.log-in {
+  }
+  
+  .log-in {
     padding: 10px 20px;
     border-radius: 15px;
     font: bold 18px Helvetica, sans-serif;
@@ -176,15 +167,16 @@ body {
     color: #5D001E;
     background-color: white;
     border: 3px solid #5D001E;
-}
-
-.log-in:hover {
+  }
+  
+  .log-in:hover {
     background-color: #5D001E;
     color: white;
     cursor: pointer;
-}
+  }
 
 /*-----Header-----*/
+
 .banner-area {
     width: 100%;
     height: 250px;
@@ -232,6 +224,78 @@ body {
     background-color:rgba(93, 0, 29, 0.8);
     cursor: pointer;    
 }
+
+/* Pop-up Form */
+
+/* The popup form - hidden by default */
+.form-popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .form-popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+/* Pop-up Form */
+
+/*-----Header-----*/
+
 /*-----Body-----*/
 
 /*-----Carousel-----*/
@@ -243,10 +307,11 @@ body {
     margin-bottom: 50px;
 }
 
-.webdev h2 {
+.blurBody h2 {
     text-align: center;
     font: bold 30px "Source Sans Pro", sans-serif;
     color: rgb(93, 0, 29);
+    margin-top: 20px;
 }
 
 .vidcar {
@@ -256,6 +321,11 @@ body {
     position: relative;
     /*display: flex;
     overflow-x: scroll;*/
+}
+
+.vidcar.active {
+    filter: blur(20px);
+    transition: 0.5s;
 }
 
 .vidcarcontainer {  
@@ -374,7 +444,7 @@ body {
     display: flex;
     background-color: #5D001E;
     justify-content: space-around;
-    margin: 20px 0px;
+    margin: 50px 0px 0px;
 }
 
 .prog-text-box {
@@ -422,9 +492,57 @@ body {
     background-color: #6e0627;
 }
 
+.progress-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    box-sizing: border-box;
+}
+
+.progress {
+    width: 500px;
+}
+
+.progress ul {
+    text-align: center;
+}
+
+.progress li {
+    list-style-type: none;
+}
+
+.progress h2 {
+    font: bold 50px "Bebas Neue", sans-serif;
+    margin-bottom: 8px;
+    color: #5D001E;
+}
+
+.progress p {
+    font: normal 18px "Helvetica", sans-serif;
+    margin-bottom: 8px;
+}
+
+.progress button {
+    border-radius: 12px;
+    background-color: rgb(238, 76, 125);
+    border: none;
+    padding: 15px;
+    margin: 12px;
+    font: bold 18px "Source San Pro", sans-serif;
+    color:rgb(255, 255, 255);
+}
+
+.progress button:hover {
+    background-color:rgba(93, 0, 29, 0.8);
+    cursor: pointer;    
+}
+
 
 
 /*-----Footer-----*/
+
 .foot-container {
     background-color: rgb(37, 37, 37);
     min-width: 100%;

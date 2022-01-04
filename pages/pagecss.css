@@ -1,41 +1,60 @@
-body{
-    background-color: white;
-    height: 100%;
-    
-}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/*
+#blurHead .active, #blurBody .active, #blurFooter .active{
+  filter: blur(20px);
+  transition: 0.5s;
+}*/
+
+header.active{
+  filter: blur(20px);
+  transition: 0.5s;
+}
+
+.body1.active{
+  filter: blur(20px);
+  transition: 0.5s;
+}
+
+footer.active{
+  filter: blur(20px);
+  transition: 0.5s;
+}
+
 /*-----Header-----*/
 
 .logo img {
   height: 50px;
-  bottom: 86vh;
-  margin: 3vh;
-  left: 0px;
+  margin: 10px 25px 10px 10px;
+}
+
+.logo-link {
+  float: left;
 }
 
 .dropdown {
   background-color: white;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 15%;
+  height: auto;
 }
 
-.home, .courses, .exercises{
+.courses, .exercises{
   position: relative;
   float: left;
-  margin: 3vh;
+  margin: 25px 20px;
 }
 
 .courses ul, .exercises ul {
   position: absolute;
   left: 0px;
   background: white;
-  margin-top: 10px;
+  margin-top: 45px;
   width: 200px;
   height: 200px;
   display: flex;
@@ -45,7 +64,6 @@ body{
   list-style: none;
   border-radius: 5px;
   opacity: 0;
-  pointer-events: none;
   transition: all 0.4s ease;
   transform: translateY(-10px);
 }
@@ -55,21 +73,20 @@ body{
   color: #5D001E;
 }
 
-.dropdown button,
-.linkhome {
+.navtext {
   background: none;
   color: #5D001E;
   border: none;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  float: left;
+  margin-right: 15px;
 }
 
-.dropdown button {
-  margin-right: 25px;
-}
-
-.dropdown button:hover {
+.navtext:hover {
   color: rgb(163, 162, 162);
 }
 
@@ -79,13 +96,13 @@ body{
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 20px;
+  font: bold 15px "Source San Pro", sans-serif;
 }
 
 .courses li:hover,
 .exercises li:hover {
   background-color: rgb(226, 226, 226);
-
 }
 
 .courses button:focus + ul,
@@ -95,16 +112,211 @@ body{
   transform: translateY(0px);
 }
 
+.searchbar {
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.searchbar .material-icons {
+  font-size: 35px;
+  color: #5D001E;
+  margin: 0px 8px;
+}
+
+.searchbar-inp {
+  padding: 8px;
+  border: 2px solid #5D001E;
+  border-radius: 10px;
+}
+
+.searchbar button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.login-btn {
+  float: right;
+  margin: 15px 40px 0px 0px;
+}
+
+.log-in {
+  padding: 10px 20px;
+  border-radius: 15px;
+  font: bold 18px Helvetica, sans-serif;
+  text-align: center;
+  color: #5D001E;
+  background-color: white;
+  border: 3px solid #5D001E;
+}
+
+.log-in:hover {
+  background-color: #5D001E;
+  color: white;
+  cursor: pointer;
+}
+
+/* Pop-up Form */
+
+/* The popup form - hidden by default */
+.form-popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.form-popup.active{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #5D001E;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: 5D001E;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+/* Pop-up Form */
+
 /*-----Header-----*/
 
 /*-----Drop-down Topics-----*/
 
+/*
 .langtitles{
   margin-left: 5%;
-  color: white;
+  color: black;
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 5px;
+}*/
+
+.button {
+  border: none;
+  color: white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonblack {
+  padding: 16px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px 2px 15px 5%;
+  width: 18%;
+  background-color: rgb(228, 4, 153);
+}
+
+.buttonblack:hover {
+  background-color: #5a5656;
+  color: #ffffff;
+}
+
+.seemore {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content {
+  background-color: white;
+  font-family: sans-serif;
+  border-radius: 0 0 20px 20px;
+  max-height: 1px;
+  width: 90%;
+  margin-left: 5%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 15px;
+}
+
+.collapsible {
+  background-color: #5D001E;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active {
+  box-shadow:-6px 0 5px -1px rgba(0, 0, 0, 0.2), 6px 0 5px -2px rgba(0, 0, 0, 0.2);
 }
 
 .active:after {
@@ -112,66 +324,17 @@ body{
 }
 
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #410015;
 }
-.button {
-    background-color: #000000;
-    border: none;
-    color: white;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
 
-  .buttonblack {
-      padding: 16px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 10px 2px 10px 10%;
-      width: 20%;
-    }
-
-  .buttonblack:hover {
-      background-color: #5a5656;
-      color: white;
-    }
-
-.content {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    width: 90%;
-    margin-left: 5%;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-.collapsible {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 90%;
-    border: none;
-    text-align: left;
-    outline: none;
-    margin-left: 5%;
-    font-size: 15px;
-  }
-
-.collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
+.languages {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 /*-----Drop-down Topics-----*/
 
-.body1{
-  background-color: rgb(77, 75, 75);
+.body1 {
+  background-color: white;
   height: 100%;
 }
 
@@ -186,6 +349,7 @@ body{
   width: 60px;
   height: 10%;
   color: white;
+  background-color: #5D001E;
   padding-right: 0 5%;
 }
 
@@ -194,8 +358,12 @@ body{
 }
 
 .buttonside:hover {
-  background-color: #5a5656;
+  background-color: #410015;
   color: white;
+}
+
+.navcontainer {
+  overflow: hidden;
 }
 
 .sidenav {
@@ -205,19 +373,40 @@ body{
   z-index: 1;
   top: 15%;
   right: 0;
-  background-color: #111;
+  background: url('images/white.jpg') repeat-y;
+  margin-bottom: -250px; /* any large number will do */
+  padding-bottom: 250px; 
+  box-shadow:-6px 0 4px -2px rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.sidenav a, .sidenav h3 {
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+  font-family: sans-serif;
+  color: black;
   transition: 0.3s;
+}
+
+.sideheading {
+  margin: 0 20px 0 20px;
+  border-bottom: black solid 5px;
+}
+
+.sidenav h3 {
+  position: absolute;
+  top: 10px;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.sidemenu {
+  display: block;
+  padding: 8px 8px 8px 32px;
+  border-bottom: black solid 5px;
+  margin: 40px 20% 20px 20%;
+  font-size: 23px;
 }
 
 .sidenav a:hover {
@@ -226,13 +415,154 @@ body{
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: 3px;
+  right: 20px;
   font-size: 36px;
   margin-left: 50px;
 }
 
 /*-----Side Navigator-----*/
+
+/*-----Footer-----*/
+
+.foot-container {
+  background-color: rgb(37, 37, 37);
+  min-width: 100%;
+  padding: 30px 20px;
+  min-height: 280px;
+}
+
+.foot-row {
+  position: relative;
+}
+
+.foot-col {
+  width: 570px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 25px;
+}
+
+.foot-col ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-col li {
+  list-style-type: none;
+  font: 13px poppins, sans-serif;
+  font-weight: 700;
+}
+
+.foot-col li a {
+  text-decoration: none;
+  color: white;
+}
+
+.newsletter-header h3 {
+  text-align: center;
+  position: absolute;
+  margin-top: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font: bold 13px poppins, sans-serif;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+}
+
+.newsletter-container input {
+  padding: 8px;
+  background-color: rgb(37, 37, 37);
+  border: 1px solid white;
+  font: bold 13px poppins, sans-serif;
+  color: white;
+}
+
+.newsletter-container input:focus {
+  outline: none;
+}
+
+.newsletter-button button {
+  border: none;
+  background-color: rgb(238, 76, 125);
+  padding: 10px 25px;
+  font: 600 13px poppins, sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter-button button:hover {
+  background-color: rgb(93, 0, 29);
+}
+
+.socmed-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 180px;
+}
+
+.socmed-container h3 {
+  color: white;
+  font: bold 13px poppins, sans-serif;
+  text-align: center;
+}
+
+.socmed {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socmed i {
+  font-size: 25px;
+  margin: 15px 10px 0px;
+  color: white;
+}
+
+.copyright {
+  background-color: rgb(72, 74, 78);
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.where-made, .copyright-symbol {
+  font: bold 13px poppins, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.where-made span {
+  color:rgb(238, 76, 125);
+  font-size: 20px;
+}
+
+/*-----Footer-----*/
+
+/*-----Responsiveness-----*/
+
+@media screen and (max-width: 800px) {
+  .carbutt{
+      top: 40%; 
+      transform: translateY(-60%);
+  }
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -277,3 +607,5 @@ body{
     text-align: left;
   }
 }
+
+/*-----Responsiveness-----*/

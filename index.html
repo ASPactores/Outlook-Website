@@ -11,7 +11,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+
+        <!-- Header -->
+
+        <header id="blurHead">
             <div class="dropdown">
                 <div class="logo">
                     <a class="logo-link" href="index.html">
@@ -68,10 +71,16 @@
                 </div>
             </div>
         </header>
-        <section class="carousel">
-            <div class="webdev">
-                <h2>START YOUR CAREER IN WEB DEVELOPMENT</h2>
-                <div class="vidcar">
+        
+        <!-- /Header -->
+
+        <!-- Body -->
+
+        <section class="blurBody">
+            <h2>START YOUR CAREER IN WEB DEVELOPMENT</h2>
+                <!-- Carousel -->
+            
+                <div class="vidcar" id="vidBlur">
                 
                     <button class="carbutt carouselbuttonleft ishidden">
                         <img src="images/left.png" alt="">
@@ -79,24 +88,15 @@
                 
                     <div class="vidcarcontainer">
                         <ul class="vidcartrack">
-                            
-                            <!--<li class="col-md-12 currentslide">
-                                <img class="carouselvids" src="images/abstract_lines.png">
-                            </li>
-                            <li class="col-md-12">
-                                <img class="carouselvids" src="images/laptop.jpg">
-                            </li>
-                            <li class="col-md-12">
-                                <img class="carouselvids" src="images/newww.jpg">
-                            </li>
-                            -->
 
                             <li class="col-md-12 currentslide">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/UB1O30fR-EE" alt="" allowfullscreen></iframe>
                             </li>
+
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/yfoY53QXEnI" alt="" allowfullscreen></iframe>
-                            </li>
+                            </li> 
+
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/hdI2bqOjy3c" alt="" allowfullscreen></iframe>
                             </li>
@@ -104,12 +104,15 @@
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/hdI2bqOjy3c" allowfullscreen></iframe>
                             </li>
+
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/w7ejDZ8SWv8" allowfullscreen></iframe>
                             </li>
+
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/mTz0GXj8NN0" allowfullscreen></iframe>
                             </li>
+
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/qZXt1Aom3Cs" allowfullscreen></iframe>
                             </li>
@@ -131,64 +134,68 @@
                         <button class="carouselindicator"></button>
                     </div>
                 </div>
+
+                <!-- /Carousel -->
+
         </section>
-        <!--
-        <section class="programming-lang">
-            <div class="prog-lang-bg">
-                <div class="prog-lang-container">
-                    <ul class="prog-lang">
-                        <li><button><a href="#">PYTHON</a></button></li>
-                        <li><button><a href="#">JAVASCRIPT</a></button></li>
-                        <li><button><a href="#">JAVA</a></button></li>
-                        <li><button><a href="#">C</a></button></li>
-                    </ul>
-                   </div>
+    
+        <section class="prog-overview">
+            <div class="test">
+                <div class="prog-text-box">
+                    <div class="prog-text-container">
+                        <ul>
+                            <li><h1>PYTHON</h1></li>
+                            <li><p>High-level Programming Language</p></li>
+                            <li><button><a href="#">Learn Python</a></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prog-text-box">
+                    <div class="prog-text-container">
+                        <ul>
+                            <li><h1>JAVA</h1></li>
+                            <li><p>High-level Programming Language</p></li>
+                            <li><button><a href="#">Learn Java</a></button></li>
+                        </ul>                
+                    </div>
+                </div>
+            </div>
+            <div class="test">
+                <div class="prog-text-box">
+                    <div class="prog-text-container">
+                        <ul>
+                            <li><h1>JAVASCRIPT</h1></li>
+                            <li><p>High-level Programming Language</p></li>
+                            <li><button><a href="#">Learn Python</a></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prog-text-box">
+                    <div class="prog-text-container">
+                        <ul>
+                            <li><h1>CSS</h1></li>
+                            <li><p>High-level Programming Language</p></li>
+                            <li><button><a href="#">Learn Java</a></button></li>
+                        </ul>                
+                    </div>
+                </div>
             </div>
         </section>
-    -->
-    <section class="prog-overview">
-        <div class="test">
-            <div class="prog-text-box">
-                <div class="prog-text-container">
-                    <ul>
-                        <li><h1>PYTHON</h1></li>
-                        <li><p>High-level Programming Language</p></li>
-                        <li><button><a href="#">Learn Python</a></button></li>
-                    </ul>
-                </div>
+        <section class="progress-container">
+            <div class="progress">
+                <ul>
+                    <li><h2>TRACK YOUR PROGRESS</h2></li>
+                    <li><p>Create your own account to save your learning progress.</p></li>
+                    <li><button>SIGN UP NOW!</button></li>
+                </ul>
             </div>
-            <div class="prog-text-box">
-                <div class="prog-text-container">
-                    <ul>
-                        <li><h1>JAVA</h1></li>
-                        <li><p>High-level Programming Language</p></li>
-                        <li><button><a href="#">Learn Java</a></button></li>
-                    </ul>                
-                </div>
-            </div>
-        </div>
-        <div class="test">
-            <div class="prog-text-box">
-                <div class="prog-text-container">
-                    <ul>
-                        <li><h1>JAVASCRIPT</h1></li>
-                        <li><p>High-level Programming Language</p></li>
-                        <li><button><a href="#">Learn Python</a></button></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="prog-text-box">
-                <div class="prog-text-container">
-                    <ul>
-                        <li><h1>CSS</h1></li>
-                        <li><p>High-level Programming Language</p></li>
-                        <li><button><a href="#">Learn Java</a></button></li>
-                    </ul>                
-                </div>
-            </div>
-        </div>
-    </section>
-        <footer>
+        </section>
+
+        <!-- /Body -->
+        
+        <!-- Footer -->
+ 
+        <footer id="blurFooter">
             <div class="foot-container">
                 <div class="foot-row">
                     <div class="foot-col">
@@ -230,47 +237,33 @@
                     They belong to their rightful owner.
                 </p>
             </div>
-        <section class="progress">
-            <p>Sign Up</p>
-        </section>
         </footer>
+        
+        <!-- /Footer -->
+
+        <!-- Script -->
+
         <script src="script.js"></script>
+        
+        <!-- /Script -->
+        <!--Pop-up Form-->
+                
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+            </form>
+        </div>
 
-        <!--Javascript-->
-        <!--
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script text="text/javascript">
-            $(document).ready(function(){
-                $('.vidcar').slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                responsive: [
-                    {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                    },
-                    {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                    }
-                ]
-                });
-			
-            });
-        </script>
-    -->
+        <!--Pop-up Form-->
     </body>
-
+    
 </html>
