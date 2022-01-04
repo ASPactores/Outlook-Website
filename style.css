@@ -313,6 +313,11 @@ opacity: 1;
     overflow-x: scroll;*/
 }
 
+.vidcar.active {
+    filter: blur(20px);
+    transition: 0.5s;
+}
+
 .vidcarcontainer {  
     position: relative;
     height: 100%;

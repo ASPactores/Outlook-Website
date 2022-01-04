@@ -83,10 +83,15 @@ dotsnav.addEventListener('click', e => {
     hideshow(slides, prevbutton, nextbutton, targetindex);
 })
 
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
+function toggleForm() {
+    var blur1 = document.getElementById('blurHead');
+    var blur2 = document.getElementById('blurBody');
+    var blur3 = document.getElementById('vidBlur');
+    var blur4 = document.getElementById('blurFooter');
+    var popup = document.getElementById('myForm');
+    blur1.classList.toggle('active');
+    blur2.classList.toggle('active');
+    blur3.classList.toggle('active');
+    blur4.classList.toggle('active');
+    popup.classList.toggle('active');
+  }

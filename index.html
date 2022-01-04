@@ -12,8 +12,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="containerblur" id="bodyblur">
-        <header>
+        <header id="blurHead">
             <div class="dropdown">
                 <div class="logo">
                     <a class="logo-link" href="index.html">
@@ -43,7 +42,7 @@
                     </ul>
                 </div>
                 <div class="login-btn">
-                <button class="log-in" onclick="openForm()"><p>LOG IN</p></button>
+                <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
                 </div>
 
                 <div class="searchbar">
@@ -66,8 +65,13 @@
                 </div>
             </div>
         </header>
-        <section>
-                <div class="vidcar">
+        
+        <!-- Header -->
+
+        <!-- Body -->
+
+        <section id="blurBody">
+                <div class="vidcar" id="vidBlur">
                 
                     <button class="carbutt carouselbuttonleft ishidden">
                         <img src="images/left.png" alt="">
@@ -129,9 +133,11 @@
                 </div>
         </section>
 
+        <!-- Body -->
+
         <!--Footer-->
 
-        <footer>
+        <footer id="blurFooter">
             <div class="foot-container">
                 <div class="foot-row">
                     <div class="foot-col">
@@ -175,6 +181,7 @@
             </div>
         </footer>
         </div>
+
         <!--Footer-->
 
         <!--Javascript-->
@@ -231,7 +238,7 @@
               <input type="password" placeholder="Enter Password" name="psw" required>
           
               <button type="submit" class="btn">Login</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
             </form>
         </div>
         

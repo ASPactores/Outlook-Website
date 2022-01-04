@@ -41,4 +41,5 @@ function toggleForm() {
   blur2.classList.toggle('active');
   blur3.classList.toggle('active');
   popup.classList.toggle('active');
+  console.log(blur3);
 }
