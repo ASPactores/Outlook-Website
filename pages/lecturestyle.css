@@ -203,7 +203,6 @@ body {
     align-items: center;
 }
 
-
 .prev-lect, .next-lect {
     display: flex;
     justify-content: center;
@@ -215,6 +214,32 @@ body {
     color: white;
     font: bold 15px poppins, sans-serif;
     cursor: pointer;
+}
+
+.hidden-btn-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hidden-btn {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev-lect-mini, .next-lect-mini {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: #5D001E;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-lect-mini span, .next-lect-mini span {
+    font-size: 30px;
 }
 
 .prev-lect:hover, .next-lect:hover {
@@ -274,7 +299,7 @@ section article {
     flex-direction: column;
     width: 100%;   
     border-radius: 8px; 
-    box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.151);
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
 }
 
 .code-editor-subcontainer {
@@ -312,6 +337,40 @@ section article {
 
 .run-code button:hover {
     background-color: #415492;
+}
+
+/*----Ouput-----*/
+
+.output-outerbox {
+    margin-top: 20px;
+    background-color: #9da9c927;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;   
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
+}
+
+.output-innerbox {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.output h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 10px 0px 10px 0px;
+}
+
+.CodeMirror {
+    max-width: 778px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 /*-----Footer-----*/
@@ -505,4 +564,104 @@ span {
     font: 18px helvetica, sans-serif;
     padding: 10px 5px 10px 15px;
     border-bottom: 1px solid gray;
+}
+
+@media all and (max-width: 750px) {
+    .lesson-container {
+        display: flex;
+        min-width: 90%;
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.301);
+        flex-wrap: wrap;
+    }
+
+    .CodeMirror {
+        max-width: 600px;
+        max-height: 100px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .side-toggle {
+        width: 35px;
+    }
+
+    .side-toggle span {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .hidden-btn-container {
+        display: flex;
+    }
+
+    .prev-next-btn button {
+        display: none;
+    }
+
+    .chap-overview {
+        width: 100%;
+    }
+
+    .CodeMirror {
+        max-width: 600px;
+        max-height: 100px;
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    /*-----Footer Responsiveness-----*/
+    .foot-col ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foot-col li {
+        padding: 15px;
+    }
+
+    .foot-container {
+        height: 420px;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 230px;
+    }
+
+    .newsletter-header h3 {
+        margin-top: 165px;
+        width: 100%;
+    }
+
+    .newsletter-container input {
+        width: 300px;
+    }
+
+    .newsletter-button {
+        margin-top: 15px;
+    }
+    .socmed-container {
+        margin-top: 340px;
+    }
+
+    .socmed a {
+        padding: 0px 20px;
+    }
+
+    .socmed i {
+        font-size: 30px;
+    }
 }

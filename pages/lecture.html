@@ -73,6 +73,16 @@
                     <button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button>
                 </div>
             </div>
+            <div class="hidden-btn-container">
+                <div class="hidden-btn">
+                    <div class="prev-next-btn-mini">
+                        <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button>
+                    </div>
+                    <div class="prev-next-btn-mini">
+                        <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <section>
             <article>
@@ -90,6 +100,16 @@
                                 </div>
                                 <div class="run-code">
                                     <button id="run-code">RUN CODE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="output-outerbox">
+                            <div class="output-innerbox">
+                                <div class="output">
+                                    <h3>Output</h3>
+                                </div>
+                                <div class="code-editor">
+                                    <textarea id="output">Hello World</textarea>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +154,6 @@
                 <div class="foot-col">
                     <ul>
                         <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
                         <li><a href="#">PRIVACY POLICY</a></li>
                         <li><a href="#">BIBLIOGRAPHY</a></li>
                     </ul>
@@ -177,6 +196,14 @@
     <script src="/codemirror/mode/python/python.js"></script>
     <script>
         var editor = CodeMirror.fromTextArea(document.getElementById('editor'),
+        {
+            mode: "python",
+            theme: "ayu-mirage",
+            lineNumbers: true
+        });
+        editor.setSize("100%", "100")
+
+        var output = CodeMirror.fromTextArea(document.getElementById('output'),
         {
             mode: "python",
             theme: "ayu-mirage",

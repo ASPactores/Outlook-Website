@@ -439,17 +439,31 @@ opacity: 1;
 
 --------------*/
 
-.prog-overview {
-    width: 100%;
-    display: flex;
+.prog-overview-container {
     background-color: #5D001E;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.prog-overview {
+    display: flex;
     justify-content: space-around;
-    margin: 50px 0px 0px;
+}
+
+.courses-offered p {
+    text-align: center;
+    font: bold 30px "Source San Pro", sans-serif;
+    color: white;
+    padding: 20px 0px 10px 0px;
+}
+
+.test {
+    width: 50%;
 }
 
 .prog-text-box {
     background-color: crimson;
-    width: 600px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -469,7 +483,7 @@ opacity: 1;
 .prog-text-container h1, .prog-text-container p {
     font-family: "Source San Pro", sans-serif;
     color: white;
-    padding: 5px 5px;
+    padding: 5px;
 }
 
 .prog-text-container button a {
@@ -555,7 +569,7 @@ opacity: 1;
 }
 
 .foot-col {
-    width: 570px;
+    width: 400px;
     height: 50px;
     position: absolute;
     top: 50%;
@@ -721,13 +735,63 @@ opacity: 1;
 }
 */
 
-@media screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
+    
+    /*-----Content Responsiveness------*/
     .prog-overview {
         display: block;
+        padding: 10px 0px;
+    }
+
+    .test {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    /*-----Footer Responsiveness-----*/
+    .foot-col ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foot-col li {
+        padding: 15px;
+    }
+
+    .foot-container {
+        height: 420px;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 230px;
+    }
+
+    .newsletter-header h3 {
+        margin-top: 165px;
         width: 100%;
     }
 
-    .prog-text-box {
-        width: 100%;
+    .newsletter-container input {
+        width: 300px;
+    }
+
+    .newsletter-button {
+        margin-top: 15px;
+    }
+    .socmed-container {
+        margin-top: 340px;
+    }
+
+    .socmed a {
+        padding: 0px 20px;
+    }
+
+    .socmed i {
+        font-size: 30px;
     }
 }
