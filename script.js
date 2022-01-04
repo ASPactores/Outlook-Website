@@ -1,3 +1,4 @@
+console.log("Anakin");
 const track = document.querySelector('.vidcartrack');
 const slides = Array.from(track.children);
 const prevbutton = document.querySelector('.carouselbuttonleft');
@@ -81,3 +82,11 @@ dotsnav.addEventListener('click', e => {
     updatedots(currentdot, targetdot);
     hideshow(slides, prevbutton, nextbutton, targetindex);
 })
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

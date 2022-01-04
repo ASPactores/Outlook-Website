@@ -31,3 +31,14 @@ function myFunction() {
     x.className = "dropdown";
   }
 }
+
+function toggleForm() {
+  var blur1 = document.getElementById('blurHead');
+  var blur2 = document.getElementById('blurBody');
+  var blur3 = document.getElementById('blurFooter');
+  var popup = document.getElementById('myForm');
+  blur1.classList.toggle('active');
+  blur2.classList.toggle('active');
+  blur3.classList.toggle('active');
+  popup.classList.toggle('active');
+}

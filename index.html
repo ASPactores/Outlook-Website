@@ -7,10 +7,12 @@
         <title>Outlook! Homepage</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="containerblur" id="bodyblur">
         <header>
             <div class="dropdown">
                 <div class="logo">
@@ -27,6 +29,7 @@
                         <li><a href="#">HTML</a></li>
                         <li><a href="#">JAVASCRIPT</a></li>
                         <li><a href="#">CSS</a></li>
+                        <li><a href="page.html">COURSE PAGE</a></li>
                     </ul>
                 </div>
                 <div class="exercises">
@@ -40,8 +43,9 @@
                     </ul>
                 </div>
                 <div class="login-btn">
-                    <button class="log-in"><p>LOG IN</p></button>
+                <button class="log-in" onclick="openForm()"><p>LOG IN</p></button>
                 </div>
+
                 <div class="searchbar">
                     <form action="https://www.google.com/">
                         <input type="text" placeholder="Search..." class="searchbar-inp">
@@ -63,8 +67,6 @@
             </div>
         </header>
         <section>
-            <div class="webdev">
-                <h2>START YOUR CAREER IN WEB DEVELOPMENT</h2>
                 <div class="vidcar">
                 
                     <button class="carbutt carouselbuttonleft ishidden">
@@ -126,6 +128,9 @@
                     </div>
                 </div>
         </section>
+
+        <!--Footer-->
+
         <footer>
             <div class="foot-container">
                 <div class="foot-row">
@@ -169,9 +174,13 @@
                 </p>
             </div>
         </footer>
-        <script src="script.js"></script>
+        </div>
+        <!--Footer-->
 
         <!--Javascript-->
+
+        <script src="script.js"></script>
+
         <!--
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -205,7 +214,29 @@
 			
             });
         </script>
-    -->
+        -->
+
+        <!--Javascript-->
+
+        <!--Pop-up Form-->
+        
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        
+        <!--Pop-up Form-->
+
     </body>
 
 </html>
