@@ -5,7 +5,7 @@
 }
 
 html, body {
-    min-height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -21,41 +21,48 @@ body {
 
 /*-----NAVBAR-----*/
 
-.whole-nav {
-    box-shadow: 0px 2px 30px 1px rgba(133, 128, 128, 0.404);
-}
 
-.logo img {
+header.active{
+    filter: blur(20px);
+    transition: 0.5s;
+  }
+  
+  .body1.active{
+    filter: blur(20px);
+    transition: 0.5s;
+  }
+  
+  footer.active{
+    filter: blur(20px);
+    transition: 0.5s;
+  }
+  
+  
+  .logo img {
     height: 50px;
     margin: 10px 25px 10px 10px;
-}
-
-.logo-link {
+  }
+  
+  .logo-link {
     float: left;
-}
-
-.dropdown {
+  }
+  
+  .dropdown {
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
-}
-
-.navtext-content {
-    position: absolute;
-    opacity: 0;
-    z-index: 2;
-}
-
-.courses, .exercises{
+  }
+  
+  .courses, .exercises{
     position: relative;
     float: left;
     margin: 25px 20px;
-}
-
-.courses ul, .exercises ul {
+  }
+  
+  .courses ul, .exercises ul {
     position: absolute;
     left: 0px;
     background: white;
@@ -68,19 +75,17 @@ body {
     flex-direction: column;
     list-style: none;
     border-radius: 5px;
-    pointer-events: none;
+    opacity: 0;
     transition: all 0.4s ease;
     transform: translateY(-10px);
-}
-
-.courses a, .exercises a {
+  }
+  
+  .courses a, .exercises a {
     text-decoration: none;
     color: #5D001E;
-    width: 100%;
-
-}
-
-.navtext {
+  }
+  
+  .navtext {
     background: none;
     color: #5D001E;
     border: none;
@@ -91,88 +96,69 @@ body {
     font-weight: bold;
     float: left;
     margin-right: 15px;
-}
-
-.viewpage {
-    text-decoration: underline;
-    padding-bottom: 5px;
-    background-color: rgba(93, 0, 29, 0.8);
-    color: white;
-}
-
-.viewpage a {
-    color: white;
-}
-
-.navtext:hover {
+  }
+  
+  .navtext:hover {
     color: rgb(163, 162, 162);
-}
-
-.courses li,
-.exercises li {
+  }
+  
+  .courses li,
+  .exercises li {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     padding-left: 20px;
     font: bold 15px "Source San Pro", sans-serif;
-}
+  }
 
-.courses li:hover,
-.exercises li:hover {
+  .showlist {
+    display: flex;
+  }
+  
+  .courses li:hover,
+  .exercises li:hover {
     background-color: rgb(226, 226, 226);
-}
-
-.show {
-    opacity: 1;
-    z-index: 100;
-    position: absolute;
-}
-
-/*
-.courses button:focus + ul,
-.exercises button:focus + ul {
+  }
+  
+  .courses button:focus + ul,
+  .exercises button:focus + ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
-}
-*/
-
-.searchbar {
+  }
+  
+  .searchbar {
     float: right;
     display: flex;
     align-items: center;
     margin-top: 22px;
-}
-
-.searchbar input {
-    font: bold 15px "Source San Pro", sans-serif;
-}
-
-.searchbar .material-icons {
+  }
+  
+  .searchbar .material-icons {
     font-size: 35px;
     color: #5D001E;
     margin: 0px 8px;
-}
-
-.searchbar-inp {
+  }
+  
+  .searchbar-inp {
     padding: 8px;
     border: 2px solid #5D001E;
     border-radius: 10px;
-}
-
-.searchbar button {
+  }
+  
+  .searchbar button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
-
-.login-btn {
+  }
+  
+  .login-btn {
     float: right;
     margin: 15px 40px 0px 0px;
-}
-
-.log-in {
+  }
+  
+  .log-in {
     padding: 10px 20px;
     border-radius: 15px;
     font: bold 18px Helvetica, sans-serif;
@@ -180,155 +166,207 @@ body {
     color: #5D001E;
     background-color: white;
     border: 3px solid #5D001E;
-}
-
-.log-in:hover {
+  }
+  
+  .log-in:hover {
     background-color: #5D001E;
     color: white;
     cursor: pointer;
-}
+  }
+
+/*-----/NAVBAR-----*/
 
 /*-----CONTENT-----*/
-
-.side-toggle button {
-    display: none;
-}
-
-.lecture-title h1 {
-    text-align: center;
-    margin: 40px 0px 30px 0px;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #5D001E;
-}
 
 .content-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0px 40px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(232, 236, 241, 0.486);
 }
 
-.side-toggle {
-    display: none;
-    position: absolute;
+.mission {
+    margin: 50px;
 }
 
-.test-content {
-    width: 45%;
+.about {
+    width: 80%;
+    background-color: white;
 }
 
-.toggle-window {
-    overflow-y: scroll;
-    height: 610px;
+.mission h2 {
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
-.test-box {
-    display: flex;
-    max-width: 600px;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 0px 5px 7px 0.5px rgb(133 128 128 / 30%);
-    flex-wrap: wrap;
-    margin: 20px;
+.mission p {
+    text-align: center;
 }
 
-.test-box:hover {
-    box-shadow: 0px 5px 7px 0.5px rgba(133, 128, 128, 0.438);
+.about-content h1 {
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
-.test-question {
-    padding: 30px;
+.about-content h2 {
+    font-family: "Montserrat", sans-serif;
 }
 
-.test-question h3 {
-    font-family: "Source Sans Pro", sans-serif;
+.about-content p, .mission p {
+    font: normal 20px "Source Sans Pro", sans-serif;
 }
 
-.test-question p {
-    font: normal 16px "Source Sans Pro", sans-serif;
+.about-content p {
+    margin: 20px 0px 0px;
+    text-justify: inter-word;
 }
 
-/*-----Aside IDE-----*/
-
-.ide-container {
-    width: 50%;
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 7px 0.5px rgb(133 128 128 / 30%);
 }
 
-.ide-outerbox {
-    background-color: #9da9c934;
-    height: 400px;
-    width: 95%;
+.about-content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px;
+    width: 80%;
+}
+
+.box {
+    display: flex;
+    width: 70%;
+    min-width: 330px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 3px 7px 0.5px rgb(133 128 128 / 30%);
+    flex-wrap: wrap;
+    margin: 20px;
     justify-content: center;
-    border-radius: 15px;
-    box-shadow: 0px 5px 7px 0.5px rgb(133 128 128 / 30%);
 }
 
-.ide-outerbox:hover {
-    box-shadow: 0px 5px 7px 0.5px rgba(133, 128, 128, 0.438);
+.box:hover {
+    box-shadow: 0px 2px 9px 0.5px rgba(133, 128, 128, 0.438);
 }
 
-.ide-innerbox {
-    width: 90%;
-}
-
-.run-code {
+.bib-box {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bibliography p {
     text-align: center;
 }
 
-.run-code button {
-    border: none;
-    background-color: #12204d;
-    padding: 8px 14px;
-    font: bold 16px helvetica, sans-serif;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    margin: 10px 0px;
-}
-
-.run-code button:hover {
-    background-color: #415492;
-}
-
-.output-outerbox {
-    margin-top: 30px;
-    background-color: #9da9c934;
-    height: 180px;
+.bib-content-box {
+    padding: 20px;
     width: 90%;
+}
+
+.bib-content-box a {
+    font: bold 20px "Montserrat", sans-serif;
+    color: rgb(93, 0, 29);
+    padding: 10px 0px 15px 0px;
+    text-decoration: none;
+}
+
+.bib-header h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.bib-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    box-shadow: 0px 5px 7px 0.5px rgb(133 128 128 / 30%);
+    margin-left: 20px;
 }
 
-.output-outerbox:hover {
-    box-shadow: 0px 5px 7px 0.5px rgba(133, 128, 128, 0.438);
+/* Pop-up Form */
+
+/* The popup form - hidden by default */
+.form-popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .form-popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
 }
 
-.output-innerbox {
-    width: 90%;
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
 }
 
-.output h3 {
-    font-family: "Source Sans Pro", sans-serif;
-    margin: 5px 0px 10px 0px;
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
 }
 
-.CodeMirror {
-    max-width: 700px;
-    width: 100%;
-    height: 100%;
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
 }
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+/* Pop-up Form */
+
+/*-----Header-----*/
+
+/*-----Body-----*/
+
 
 /*-----Footer-----*/
+
 .foot-container {
     background-color: rgb(37, 37, 37);
     min-width: 100%;
@@ -341,7 +379,7 @@ body {
 }
 
 .foot-col {
-    width: 570px;
+    width: 400px;
     height: 50px;
     position: absolute;
     top: 50%;
@@ -458,105 +496,50 @@ body {
     font-size: 20px;
 }
 
-/*-----Side Menu -----*/
+@media all and (max-width: 500px) {
 
-span {
-    height: 100%;
-}
-
-.side-menu-container {
-    margin: 0;
-    position: fixed;
-    right: -200px;
-    top: 25%;
-    z-index: 2;
-    transition: .4s ease-in-out;
-}
-
-#side-menu-container.active {
-    right: 0;
-}
-
-.center-vert {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.side-toggle {
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.side-toggle button {
-    border: none;
-    background-color: #5D001E;
-    cursor: pointer;
-}
-
-.side-toggle span {
-    color: white;
-    font-size: 50px;
-}
-
-.side-menu {
-    height: 400px;
-    background-color: white;
-    width: 200px;
-    overflow-y: scroll;
-    border-radius: 10px;
-    box-shadow: 0px 7px 13px 1px rgb(133 128 128 / 30%);
-}
-
-.side-menu a {
-    text-decoration: none;
-    color: black;
-}
-
-.side-menu li {
-    list-style-type: none;
-    font: 18px helvetica, sans-serif;
-    padding: 10px 5px 10px 15px;
-    border-bottom: 1px solid gray;
-}
-
-@media all and (max-width: 700px) {
-
-    .test-content {
-        position: absolute;
-        z-index: 5;
-        width: 450px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    /*-----Footer Responsiveness-----*/
+    .foot-col ul {
         flex-direction: column;
-        left: -428px;
-        transition: 0.4s ease-in-out;
+        text-align: center;
     }
 
-    .toggle-window {
-        width: 90%;
-        background-color: white;
+    .foot-col li {
+        padding: 15px;
     }
 
-    .ide-container {
+    .foot-container {
+        height: 420px;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 230px;
+    }
+
+    .newsletter-header h3 {
+        margin-top: 165px;
         width: 100%;
     }
 
-    .side-toggle button {
-        display: block;
-        position: absolute;
-        left: 202px;
-        z-index: 5;
+    .newsletter-container input {
+        width: 300px;
     }
 
-    #test-content.active {
-        left: -20px;
+    .newsletter-button {
+        margin-top: 15px;
+    }
+    .socmed-container {
+        margin-top: 340px;
     }
 
-    .side-toggle span {
-        font-size: 50px;
+    .socmed a {
+        padding: 0px 20px;
     }
 
+    .socmed i {
+        font-size: 30px;
+    }
 }

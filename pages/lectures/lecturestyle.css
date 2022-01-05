@@ -374,6 +374,7 @@ section article {
 }
 
 /*-----Footer-----*/
+
 .foot-container {
     background-color: rgb(37, 37, 37);
     min-width: 100%;
@@ -386,7 +387,7 @@ section article {
 }
 
 .foot-col {
-    width: 570px;
+    width: 400px;
     height: 50px;
     position: absolute;
     top: 50%;

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="exercisestyle.css">
-    <title>Exercise Page</title>
+    <link rel="stylesheet" href="lecturestyle.css">
+    <title>Lecture Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -61,86 +61,101 @@
         </div>
     </header>
     <section>
-        <div class="lecture-title">
-            <h1>PYTHON EXERCISES</h1>
-        </div>
-        <div class="content-container">
-            <div class="test-content" id="test-content">
-                <div class="side-toggle" id="side-toggle">
-                    <button id="toggle" onclick="show()"><span class="material-icons">arrow_right</span></button>
+        <div class="chap-overview-container">
+            <div class="chap-overview">
+                <div class="prev-next-btn">
+                    <button id="prev-lect" class="prev-lect"><span class="material-icons">arrow_left</span>Previous</button>
                 </div>
-                <div class="toggle-window">
-                    <section class="test-box">
-                        <div class="test-question">
-                            <h3>Challenge #1</h3>
-                            <p>Place some challenges here. This will test the student's learning progress.</p>
-                        </div>
-                    </section>
-                    <section class="test-box">
-                        <div class="test-question">
-                            <h3>Challenge #1</h3>
-                            <p>Place some challenges here. This will test the student's learning progress.</p>
-                        </div>
-                    </section>
-                    <section class="test-box">
-                        <div class="test-question">
-                            <h3>Challenge #1</h3>
-                            <p>Place some challenges here. This will test the student's learning progress.</p>
-                        </div>
-                    </section>
-                    <section class="test-box">
-                        <div class="test-question">
-                            <h3>Challenge #1</h3>
-                            <p>Place some challenges here. This will test the student's learning progress.</p>
-                        </div>
-                    </section>
-                    <section class="test-box">
-                        <div class="test-question">
-                            <h3>Challenge #1</h3>
-                            <p>Place some challenges here. This will test the student's learning progress.</p>
-                        </div>
-                    </section>
-                    <section class="test-box">
-                        <div class="test-question">
-                            <h3>Challenge #1</h3>
-                            <p>Place some challenges here. This will test the student's learning progress.</p>
-                        </div>
-                    </section>
+                <div class="chap-name">
+                    <h2>CHAPTER 1 OVERVIEW</h2>
+                </div>
+                <div class="prev-next-btn">
+                    <button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button>
                 </div>
             </div>
-            <div class="ide-container">
-                <div class="ide-outerbox">
-                    <div class="ide-innerbox">
-                        <div class="code-editor">
-                            <textarea id="output">print("Hello,World!")</textarea>
-                        </div>
-                        <div class="run-code">
-                            <button id="run-code">RUN CODE</button>
-                        </div>
+            <div class="hidden-btn-container">
+                <div class="hidden-btn">
+                    <div class="prev-next-btn-mini">
+                        <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button>
                     </div>
-                </div>
-                <div class="output-outerbox">
-                    <div class="output-innerbox">
-                        <div class="output">
-                            <h3>Output:</h3>
-                        </div>
-                        <div class="code-editor">
-                            <textarea id="editor">Hello World</textarea>
-                        </div>
+                    <div class="prev-next-btn-mini">
+                        <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button>
                     </div>
                 </div>
             </div>
         </div>
+        <section>
+            <article>
+                <div class="lesson-container">
+                    <div class="lesson-text">
+                        <h2>LESSON 1</h2>
+                        <p>"Python dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <div class="code-editor-container">
+                            <div class="code-editor-subcontainer">
+                                <div class="tryit">
+                                    <p>Practice Exercise</p>
+                                </div>
+                                <div class="code-editor">
+                                    <textarea id="editor">print("Hello,World!")</textarea>
+                                </div>
+                                <div class="run-code">
+                                    <button id="run-code">RUN CODE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="output-outerbox">
+                            <div class="output-innerbox">
+                                <div class="output">
+                                    <h3>Output</h3>
+                                </div>
+                                <div class="code-editor">
+                                    <textarea id="output">Hello World</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="lesson-container">
+                    <div class="lesson-text">
+                        <h2>LESSON 1</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+            </article>
+        </section>
     </section>
+    <aside>
+        <div class="side-menu-container" id="side-menu-container">
+            <div class="center-vert">
+                <div class="side-toggle" id="side-toggle">
+                    <button id="toggle" onclick="show()" title="List of Lessons"><span class="material-icons">arrow_left</span></button>
+                </div>
+                <div class="side-menu" id="side-menu">
+                    <ul>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                        <li><a href="#">Lesson Title</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
     <footer>
         <div class="foot-container">
             <div class="foot-row">
                 <div class="foot-col">
                     <ul>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="/pages/aboutpage/about.html">ABOUT US</a></li>
                         <li><a href="#">PRIVACY POLICY</a></li>
-                        <li><a href="#">BIBLIOGRAPHY</a></li>
+                        <li><a href="/pages/aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
                     </ul>
                 </div>
                 <div class="newsletter">
@@ -169,14 +184,14 @@
         <div class="copyright">
             <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
             <p class="copyright-symbol">
-                OUTLOOK! All rights reserved. 
+                OUTLOOK! All rights reserved.
                 OUTLOOK! does not claim ownership of the course packs used.
                 They belong to their rightful owner.
             </p>
         </div>
     </footer>
     <!--Javascript-->
-    <script src="exercisescript.js"></script>
+    <script src="lecturescript.js"></script>
     <script src="/codemirror/lib/codemirror.js"></script>
     <script src="/codemirror/mode/python/python.js"></script>
     <script>
@@ -186,13 +201,13 @@
             theme: "ayu-mirage",
             lineNumbers: true
         });
-        editor.setSize("100%", "400")
+        editor.setSize("100%", "100")
 
         var output = CodeMirror.fromTextArea(document.getElementById('output'),
         {
             mode: "python",
             theme: "ayu-mirage",
-            lineNumbers: true,
+            lineNumbers: true
         });
         editor.setSize("100%", "100")
     </script>

@@ -5,7 +5,3 @@ function dropdownApp() {
 function show() {
     document.getElementById("test-content").classList.toggle("active");
 }
-
-function move() {
-    document.getElementById("toggle").classList.toggle("move-left");
-}
