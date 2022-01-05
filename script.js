@@ -1,4 +1,3 @@
-console.log("Anakin");
 const track = document.querySelector('.vidcartrack');
 const slides = Array.from(track.children);
 const prevbutton = document.querySelector('.carouselbuttonleft');
@@ -6,9 +5,7 @@ const nextbutton = document.querySelector('.carouselbuttonright');
 const dotsnav = document.querySelector('.carouselnavigator');
 const dots = Array.from(dotsnav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
-console.log(slides);
 
-console.log(slideWidth);
 /*
 slides[0].style.left = 0;
 slides[1].style.left = slideWidth * 1 + 'px';
@@ -95,3 +92,33 @@ function toggleForm() {
     blur4.classList.toggle('active');
     popup.classList.toggle('active');
   }
+
+function dropdownApp1() {
+    var owo = document.getElementById("navtext-content1");
+    owo.classList.toggle("showlist");
+    console.log(owo);
+}
+
+function dropdownApp2() {
+    var owo = document.getElementById("navtext-content2");
+    owo.classList.toggle("showlist");
+    console.log(owo);
+}
+
+function mobileNav() {
+    var owo = document.getElementById("mobile-navigation");
+    owo.classList.toggle("showlist");
+}
+
+window.onclick = function(e) {
+    if (!e.target.matches('.navtext')) {
+    var myDropdown1 = document.getElementById("navtext-content1");
+        if (myDropdown1.classList.contains('showlist')) {
+            myDropdown1.classList.remove('showlist');
+        }
+    var myDropdown2 = document.getElementById("navtext-content2");
+        if (myDropdown2.classList.contains('showlist')) {
+            myDropdown2.classList.remove('showlist');
+        }
+    }
+}
