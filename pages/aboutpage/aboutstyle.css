@@ -222,7 +222,7 @@ header.active{
 
 .about-content p {
     margin: 20px 0px 0px;
-    text-justify: inter-word;
+    text-align: justify;
 }
 
 .about {
@@ -494,6 +494,12 @@ opacity: 1;
 .where-made span {
     color:rgb(238, 76, 125);
     font-size: 20px;
+}
+
+@media all and (max-width: 800px) {
+    .bib-link a {
+        font-size: 17px;
+    }
 }
 
 @media all and (max-width: 500px) {
