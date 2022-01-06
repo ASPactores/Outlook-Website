@@ -13,30 +13,11 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("openButton").style.visibility = "hidden";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("openButton").style.visibility = "visible";
-}
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "dropdown") {
-    x.className += " responsive";
-  } else {
-    x.className = "dropdown";
-  }
-}
-
 function toggleForm() {
-  var blur1 = document.getElementById('blurHead');
-  var blur2 = document.getElementById('blurBody');
-  var blur3 = document.getElementById('blurFooter');
-  var popup = document.getElementById('myForm');
+  var blur1 = document.getElementById('blurhead');
+  var blur2 = document.getElementById('blurbody');
+  var blur3 = document.getElementById('blurfooter');
+  var popup = document.getElementById('myform');
   blur1.classList.toggle('active');
   blur2.classList.toggle('active');
   blur3.classList.toggle('active');

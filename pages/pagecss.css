@@ -88,8 +88,6 @@ footer.active {
   display: none;
   float: right;
   padding: 10px;
-  right: 0;
-  top: 0;
 }
 
 .burgermenu{
@@ -113,7 +111,7 @@ footer.active {
   right: 0;
   background-color: white;
   width: 100%;
-  padding: 8px;
+  padding: 80px 8px 8px 8px;
   z-index: 1;
   overflow-y: hidden;
   top: 60px;
@@ -377,12 +375,12 @@ footer.active {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.content h4 {
+.content .topic-title {
   font-size: 20px;
   font-weight: bold;
 }
 
-.content p {
+.content .topic-details {
   font-size: 15px;
 }
 
@@ -426,88 +424,6 @@ footer.active {
   margin-bottom: 60px;
 }
 /*-----Drop-down Topics-----*/
-/*-----Side Navigator-----*/
-
-.buttonside{
-  position: fixed;
-  right: 0;
-  top: 50%;
-  font-size: 25px;
-  cursor:pointer;
-  width: 60px;
-  height: 10%;
-  color: white;
-  background-color: #5D001E;
-  padding-right: 0 5%;
-}
-
-.buttonside:active {
-  visibility: hidden;
-}
-
-.buttonside:hover {
-  background-color: #410015;
-  color: white;
-}
-
-.navcontainer {
-  overflow: hidden;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: absolute;
-  z-index: 1;
-  top: 15%;
-  right: 0;
-  background: url('../images/white.jpg') repeat-y;
-  box-shadow:-6px 0 4px -2px rgba(0, 0, 0, 0.2);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a, .sidenav h3 {
-  text-decoration: none;
-  font-family: sans-serif;
-  color: black;
-  transition: 0.3s;
-}
-
-.sideheading {
-  margin: 0 20px 0 20px;
-  border-bottom: black solid 5px;
-}
-
-.sidenav h3 {
-  position: absolute;
-  top: 10px;
-  font-size: 27px;
-  font-weight: bold;
-}
-
-.sidemenu {
-  display: block;
-  padding: 8px 8px 8px 32px;
-  border-bottom: black solid 5px;
-  margin: 40px 20% 20px 20%;
-  font-size: 23px;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 3px;
-  right: 20px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/*-----Side Navigator-----*/
 
 /*-----Footer-----*/
 
@@ -644,9 +560,9 @@ footer.active {
 /*-----Responsiveness-----*/
 
 @media all and (max-width: 800px) {
-  .carbutt{
+  .carbutt{ 
       top: 40%; 
-      transform: translateY(-60%);
+      transform: translateY(-60%); 
   }
 }
 /* 
@@ -708,7 +624,7 @@ footer.active {
 @media all and (max-width: 700px) {
     
 /*-----Content Responsiveness------*/
-.exercises, .courses, .login-btn, .searchbar {
+  .exercises, .courses, .login-btn, .searchbar {
     display: none;
   }
 

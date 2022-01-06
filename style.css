@@ -81,20 +81,28 @@ footer.active{
     text-decoration: none;
     display: block;
     text-align: left;
-    font-family: sans-serif;
+    font: bold 15px "Montserrat", sans-serif;
     transition: 0.3s;
+    border-bottom: 1px solid #5d001d57;
+}
+
+.navtext-content a:hover {
+    background-color: #cecacac5;
+}
+
+.view-courses a {
+    background-color: #5D001E;
+    color: white;
+    text-decoration: underline;
 }
 
 .mobileview {
     display: none;
     float: right;
     padding: 10px;
-    right: 0;
-    top: 0;
 }
 
 .burgermenu{
-    font-size: 40px;
     color: #5D001E;
 }
 
@@ -106,30 +114,55 @@ footer.active{
     cursor: pointer;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
+    font-size: 40px;
+}
+
+.mobnav-drop-content{
+    display: none;
+}
+
+.mobdrop {
+    text-decoration: underline;
 }
 
 .mobile-navigation {
     display: none;
-    position: absolute;
+    position: fixed;
+    height: 100%;
+    top: 0;
     right: 0;
     background-color: white;
-    width: 100%;
-    padding: 80px 8px 8px 8px;
+    width: 250px;
+    padding: 50px 0px;
     z-index: 1;
-    overflow-y: hidden;
-    top: 60px;
+    overflow-x: hidden;
+    border-radius: 10px;
 }
 
-.mobile-navigation a{
-    float: none;
-    color: #5D001E;
-    padding: 12px 16px;
+.mobile-navigation a, .mobnav-drop {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    display: block;
-    text-align: left;
     font-size: 20px;
-    font-family: sans-serif;
-    transition: 0.3s;
+    color: #5D001E;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font: 20px "Poppins", sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(214, 195, 195, 0.795);
+}
+
+
+.mobnav-drop-content a {
+    padding-left: 30px;
+    font-weight: 500;
+}
+.mobnav-drop-content {
+    background-color: #f0f0f393;
 }
 
 .showlist {
@@ -269,7 +302,9 @@ footer.active{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    border-radius: 20px;
 }
+
 .form-popup h1{
     margin-bottom: 10px;
 }
@@ -316,7 +351,7 @@ footer.active{
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-    border: 5px solid #5D001E;
+    border: 2px solid #5D001E;
     background-color: white;
     color: #5D001E;
     padding: 10px 20px;
@@ -366,6 +401,7 @@ footer.active{
 .vidcarcontainer {  
     position: relative;
     height: 100%;
+    width:100%;
     overflow: hidden;
     padding-top: 0;
 }
@@ -722,18 +758,6 @@ footer.active{
 
 /*-----Responsiveness-----*/
 
-@media screen and (max-width: 800px) {
-    .carbutt{
-        top: 40%; 
-        transform: translateY(-60%);
-    }
-}
-
-.ishidden { display: none; }
-
-.carouselindicator.currentslide {
-    background-color: rgba(95, 13, 13, 0.781);
-}
 
 @media all and (max-width: 1000px) {
     .login-btn, .searchbar {
@@ -742,11 +766,6 @@ footer.active{
     .courses, .exercises {
         float: right;
     }
-}
-
-@media all and (max-width: 700px) {
-    
-    /*-----Content Responsiveness------*/
     .prog-overview {
         display: block;
         padding: 10px 0px;
@@ -765,7 +784,40 @@ footer.active{
     }
 }
 
+@media screen and (max-width: 800px) {
+    .carbutt{
+        top: 40%; 
+        transform: translateY(-60%);
+    }
+}
+
+.ishidden { display: none; }
+
+.carouselindicator.currentslide {
+    background-color: rgba(95, 13, 13, 0.781);
+}
+
+@media all and (max-width: 800px) {
+
+    .form-popup {
+        width: 90%;
+    }
+    
+    /*-----Content Responsiveness------*/
+    .vidcar img {
+        display: none;
+    }
+    .vidcar {
+        width: 95%;
+    }
+}
+
 @media all and (max-width: 500px) {
+
+    .content h1 {
+        font-size: 70px;
+        text-align: center;
+    }
 
     /*-----Footer Responsiveness-----*/
     .foot-col ul {
