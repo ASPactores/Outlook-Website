@@ -25,68 +25,151 @@ body {
 header.active{
     filter: blur(20px);
     transition: 0.5s;
-  }
+}
   
-  .body1.active{
+.body1.active{
     filter: blur(20px);
     transition: 0.5s;
-  }
+}
   
-  footer.active{
+footer.active{
     filter: blur(20px);
     transition: 0.5s;
-  }
+}
   
-  /*-----Header-----*/
+/*-----Header-----*/
   
-  .logo img {
+.logo img {
     height: 50px;
     margin: 10px 25px 10px 10px;
-  }
+}
   
-  .logo-link {
+.logo-link {
     float: left;
-  }
+}
   
-  .dropdown {
+.dropdown {
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
-  }
+}
   
-  .courses, .exercises{
+.courses, .exercises{
     position: relative;
     float: left;
     margin: 25px 20px;
-  }
+}
   
-  .courses ul, .exercises ul {
+.navtext-content {
+    display: none;
     position: absolute;
-    left: 0px;
-    background: white;
-    margin-top: 45px;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    border-radius: 5px;
-    opacity: 0;
-    transition: all 0.4s ease;
-    transform: translateY(-10px);
-  }
-  
-  .courses a, .exercises a {
-    text-decoration: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow-y: hidden;
+    top: 50px;
+}
+
+.navtext-content a{
+    float: none;
     color: #5D001E;
-  }
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font: bold 15px "Montserrat", sans-serif;
+    transition: 0.3s;
+    border-bottom: 1px solid #5d001d57;
+}
+
+.navtext-content a:hover {
+    background-color: #cecacac5;
+}
+
+.view-courses a {
+    background-color: #5D001E;
+    color: white;
+    text-decoration: underline;
+}
+
+.mobileview {
+    display: none;
+    float: right;
+    padding: 10px;
+}
+
+.burgermenu{
+    color: #5D001E;
+}
+
+.mobtext {
+    background: none;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.mobnav-drop-content{
+    display: none;
+}
+
+.mobdrop {
+    text-decoration: underline;
+}
+
+.mobile-navigation {
+    display: none;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 250px;
+    padding: 50px 0px;
+    z-index: 1;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.mobile-navigation a, .mobnav-drop {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #5D001E;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font: 20px "Poppins", sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(214, 195, 195, 0.795);
+}
+
+
+.mobnav-drop-content a {
+    padding-left: 30px;
+    font-weight: 500;
+}
+.mobnav-drop-content {
+    background-color: #f0f0f393;
+}
+
+.showlist {
+    display: block;
+}
   
-  .navtext {
+.navtext {
     background: none;
     color: #5D001E;
     border: none;
@@ -97,69 +180,43 @@ header.active{
     font-weight: bold;
     float: left;
     margin-right: 15px;
-  }
+}
   
-  .navtext:hover {
+.navtext:hover {
     color: rgb(163, 162, 162);
-  }
+}
   
-  .courses li,
-  .exercises li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    font: bold 15px "Source San Pro", sans-serif;
-  }
-
-  .showlist {
-    display: flex;
-  }
-  
-  .courses li:hover,
-  .exercises li:hover {
-    background-color: rgb(226, 226, 226);
-  }
-  
-  .courses button:focus + ul,
-  .exercises button:focus + ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(0px);
-  }
-  
-  .searchbar {
+.searchbar {
     float: right;
     display: flex;
     align-items: center;
     margin-top: 22px;
-  }
+}
   
-  .searchbar .material-icons {
+.searchbar .material-icons {
     font-size: 35px;
     color: #5D001E;
     margin: 0px 8px;
-  }
+}
   
-  .searchbar-inp {
+.searchbar-inp {
     padding: 8px;
     border: 2px solid #5D001E;
     border-radius: 10px;
-  }
+}
   
-  .searchbar button {
+.searchbar button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-  }
+}
   
-  .login-btn {
+.login-btn {
     float: right;
     margin: 15px 40px 0px 0px;
-  }
+}
   
-  .log-in {
+.log-in {
     padding: 10px 20px;
     border-radius: 15px;
     font: bold 18px Helvetica, sans-serif;
@@ -167,13 +224,13 @@ header.active{
     color: #5D001E;
     background-color: white;
     border: 3px solid #5D001E;
-  }
+}
   
-  .log-in:hover {
+.log-in:hover {
     background-color: #5D001E;
     color: white;
     cursor: pointer;
-  }
+}
 
 /*-----Header-----*/
 
@@ -238,61 +295,70 @@ header.active{
     transform: translate(-50%, -50%);
     width: 600px;
     padding: 50px;
+    font: bold 18px Helvetica, sans-serif;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
     background-color: white;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-  }
+    border-radius: 20px;
+}
+
+.form-popup h1{
+    margin-bottom: 10px;
+}
   
-  .form-popup.active{
+.form-popup.active{
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
-  }
+}
 
 /* Add styles to the form container */
 .form-container {
-max-width: 300px;
-padding: 10px;
-background-color: white;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
 }
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
-width: 100%;
-padding: 15px;
-margin: 5px 0 22px 0;
-border: none;
-background: #f1f1f1;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
 }
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-background-color: #ddd;
-outline: none;
+    background-color: #ddd;
+    outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-background-color: #04AA6D;
-color: white;
-padding: 16px 20px;
-border: none;
-cursor: pointer;
-width: 100%;
-margin-bottom:10px;
-opacity: 0.8;
+    background-color: #5D001E;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 1;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-background-color: red;
+    border: 2px solid #5D001E;
+    background-color: white;
+    color: #5D001E;
+    padding: 10px 20px;
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
-opacity: 1;
+    opacity: 0.8;
 }
 
 /* Pop-up Form */
@@ -310,7 +376,7 @@ opacity: 1;
     margin-bottom: 50px;
 }
 
-.blurBody h2 {
+.body1 h2 {
     text-align: center;
     font: bold 30px "Source Sans Pro", sans-serif;
     color: rgb(93, 0, 29);
@@ -334,6 +400,7 @@ opacity: 1;
 .vidcarcontainer {  
     position: relative;
     height: 100%;
+    width:100%;
     overflow: hidden;
     padding-top: 0;
 }
@@ -557,8 +624,6 @@ opacity: 1;
     cursor: pointer;    
 }
 
-
-
 /*-----Footer-----*/
 
 .foot-container {
@@ -690,6 +755,34 @@ opacity: 1;
     font-size: 20px;
 }
 
+/*-----Responsiveness-----*/
+
+
+@media all and (max-width: 1000px) {
+    .login-btn, .searchbar {
+        display: none;
+    }
+    .courses, .exercises {
+        float: right;
+    }
+    .prog-overview {
+        display: block;
+        padding: 10px 0px;
+    }
+
+    .test {
+        width: 100%;
+    }
+    
+    .exercises, .courses, .login-btn, .searchbar {
+        display: none;
+    }
+
+    .mobileview {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .carbutt{
         top: 40%; 
@@ -749,10 +842,28 @@ opacity: 1;
 
     .test {
         width: 100%;
+
+@media all and (max-width: 800px) {
+
+    .form-popup {
+        width: 90%;
+    }
+    
+    /*-----Content Responsiveness------*/
+    .vidcar img {
+        display: none;
+    }
+    .vidcar {
+        width: 95%;
     }
 }
 
 @media all and (max-width: 500px) {
+
+    .content h1 {
+        font-size: 70px;
+        text-align: center;
+    }
 
     /*-----Footer Responsiveness-----*/
     .foot-col ul {

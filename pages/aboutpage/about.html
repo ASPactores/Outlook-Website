@@ -12,117 +12,125 @@
         <link rel="stylesheet" href="aboutstyle.css">
     </head>
     <body>
+                    
+        <!-- /Header -->
 
-        <!-- Navigation Bar -->
-
-        <header id="blurHead">
+        <header id="blurhead">
             <div class="dropdown">
                 <div class="logo">
-                    <a class="logo-link" href="index.html">
-                        <img src="/images/logo.png" alt="OUTLOOK!">
+                    <a class="logo-link" href="../../index.html">
+                        <img src="../../images/logo.png" alt="OUTLOOK!">
                     </a>
                 </div>            
-            <nav>
-                <div class="courses">
-                    <button class="navtext" onclick="dropdownApp()">COURSES<i class="material-icons">arrow_drop_down</i></button>
-                    <div id="navtext-content" class="navtext-content">
-                        <ul>
-                            <li><a href="#">PYTHON</a></li>
-                            <li><a href="#">JAVA</a></li>
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">JAVASCRIPT</a></li>
-                            <li><a href="#">CSS</a></li>
-                            <li class="viewpage"><a href="/pages/page.html" target="_blank">View All Courses</a></li>
-                        </ul>
+                <nav>
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
                     </div>
-                </div>
-                <div class="exercises">
-                    <button class="navtext" onclick="dropdownApp()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
-                    <div id="navtext-content" class="navtext-content">
-                        <ul>
-                            <li><a href="#">PYTHON</a></li>
-                            <li><a href="#">JAVA</a></li>
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">JAVASCRIPT</a></li>
-                            <li><a href="#">CSS</a></li>
-                            <li class="viewpage"><a href="/pages/page.html" target="_blank">View All Courses</a></li>
-                        </ul>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
                     </div>
-                </div>
-                <div class="login-btn">
-                    <button class="log-in"><p>LOG IN</p></button>
-                </div>
-                <div class="searchbar">
-                    <form action="https://www.google.com/">
-                        <input type="text" placeholder="Search..." class="searchbar-inp">
-                    </form>
-                    <button><i class="material-icons">search</i></button>                                       
-                </div>
-            </nav>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        
-        <!-- /Navigation Bar -->
+        </header>
+
+        <!-- /Header -->
 
         <!-- Body -->
-            <div class="content-container">
-                <article class="mission">
-                    <h2>- OUR MISSION -</h2>
-                    <p>to provide programming learning resources to everyone.</p>
+        <div class="content-container body1" id="blurbody">
+            <article class="mission">
+                <h2>- OUR MISSION -</h2>
+                <p>to provide programming learning resources to everyone.</p>
+            </article>
+            <div class="about">
+                <article class="about-content">
+                    <h1>ABOUT</h1>
                 </article>
-                <div class="about">
-                    <article class="about-content">
-                        <h1>ABOUT</h1>
-                    </article>
-                    <article class="about-content">
-                        <h2>WHAT IS OUTLOOK!?</h2>
-                        <p>
-                            OUTLOOK! is a project created by Anakin Pactores and Marc Balabat with the primary goal of teaching programming languages to everyone for free.
-                        </p>
-                        <p>
-                            The website contains lessons that are designed to be simple and easy to follow so that anyone regardless of age and skill-level can start learning how to program.
-                        </p>
-                    </article>
-                    <article class="about-content">
-                        <h2>SELF-PACED LEARNING</h2>
-                        <p>The learning resources are available to you 24/7. You can learn at your own pace. Creating an account will allow you to track your learning progress.</p>
-                    </article>
-                    <article class="about-content">
-                        <h2>INSTANT APPLICATION OF KNOWLEDGE</h2>
-                        <p>The website offers practice problems for each lesson and course. These problems allow the learners to verify what they learned and apply the skills they acquired from the learning resources.</p>
-                    </article>
-                    <article class="about-content">
-                        <div class="bibliography" id="bibliography">
-                            <h1>BIBLIOGRAPHY</h1>
-                            <p>OUTLOOK! does not claim ownership of the course packs used. They belong to the following sources:</p>
-                            <div class="bib-box">
-                                <section class="box">
-                                    <div class="bib-content-box">
-                                        <div class="bib-header">
-                                            <img src="/images/bib-logo/w3schools.jpg" height="70px">
-                                            <h3>W3SCHOOLS</h3>
-                                        </div>
-                                        <div class="bib-link">
-                                            <p><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
-                                        </div>
+                <article class="about-content">
+                    <h2>WHAT IS OUTLOOK!?</h2>
+                    <p>
+                        OUTLOOK! is a project created by Anakin Pactores and Marc Balabat with the primary goal of teaching programming languages to everyone for free.
+                    </p>
+                    <p>
+                        The website contains lessons that are designed to be simple and easy to follow so that anyone regardless of age and skill-level can start learning how to program.
+                    </p>
+                </article>
+                <article class="about-content">
+                    <h2>SELF-PACED LEARNING</h2>
+                    <p>The learning resources are available to you 24/7. You can learn at your own pace. Creating an account will allow you to track your learning progress.</p>
+                </article>
+                <article class="about-content">
+                    <h2>INSTANT APPLICATION OF KNOWLEDGE</h2>
+                    <p>The website offers practice problems for each lesson and course. These problems allow the learners to verify what they learned and apply the skills they acquired from the learning resources.</p>
+                </article>
+                <article class="about-content">
+                    <div class="bibliography" id="bibliography">
+                        <h1>BIBLIOGRAPHY</h1>
+                        <p>OUTLOOK! does not claim ownership of the course packs used. They belong to the following sources:</p>
+                        <div class="bib-box">
+                            <section class="box">
+                                <div class="bib-content-box">
+                                    <div class="bib-header">
+                                        <img src="../../images/bib-logo/w3schools.jpg" height="70px">
+                                        <h3>W3SCHOOLS</h3>
                                     </div>
-                                </section>
-                            </div>
+                                    <div class="bib-link">
+                                        <p><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                    </article> 
-                </div>
+                    </div>
+                </article> 
             </div>
+        </div>
         <!-- /Body -->
         
         <!-- Footer -->
  
-        <footer id="blurFooter">
+        <footer id="blurfooter">
             <div class="foot-container">
                 <div class="foot-row">
                     <div class="foot-col">
                         <ul>
-                            <li><a href="/pages/aboutpage/about.html">ABOUT US</a></li>
+                            <li><a href="../../pages/aboutpage/about.html">ABOUT US</a></li>
                             <li><a href="#">PRIVACY POLICY</a></li>
-                            <li><a href="/pages/aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                            <li><a href="../../pages/aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
                         </ul>
                     </div>
                     <div class="newsletter">
@@ -149,7 +157,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+                <p class="where-made">Made in the Philippines with <span>&#9829;</span></p>
                 <p class="copyright-symbol">
                     OUTLOOK! All rights reserved. 
                     OUTLOOK! does not claim ownership of the course packs used.
@@ -160,9 +168,15 @@
         
         <!-- /Footer -->
 
+        <!--Script-->
+
+        <script src="about.js"></script>
+
+        <!--/Script-->
+
         <!--Pop-up Form-->
                 
-        <div class="form-popup" id="myForm">
+        <div class="form-popup" id="myform">
             <form action="/action_page.php" class="form-container">
             <h1>Login</h1>
         

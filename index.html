@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Outlook! Homepage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -15,7 +15,7 @@
 
         <!-- Header -->
 
-        <header id="blurHead">
+        <header id="blurhead">
             <div class="dropdown">
                 <div class="logo">
                     <a class="logo-link" href="index.html">
@@ -24,39 +24,59 @@
                 </div>            
             <nav>
                 <div class="courses">
-                    <button class="navtext" onclick="dropdownApp()">COURSES<i class="material-icons">arrow_drop_down</i></button>
-                    <div id="navtext-content" class="navtext-content">
-                        <ul>
-                            <li><a href="#">PYTHON</a></li>
-                            <li><a href="#">JAVA</a></li>
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">JAVASCRIPT</a></li>
-                            <li><a href="#">CSS</a></li>
-                            <li class="viewpage"><a href="/pages/page.html" target="_blank">View All Courses</a></li>
-                        </ul>
+                    <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                    <div id="navtext-content1" class="navtext-content">
+                        <a href="#">PYTHON</a>
+                        <a href="#">JAVA</a>
+                        <a href="#">HTML</a>
+                        <a href="#">JAVASCRIPT</a>
+                        <a href="#">CSS</a>
+                        <p class="view-courses"><a href="pages/page.html">View All Courses</a></p>
                     </div>
                 </div>
                 <div class="exercises">
-                    <button class="navtext" onclick="dropdownApp()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
-                    <div id="navtext-content" class="navtext-content">
-                        <ul>
-                            <li><a href="#">PYTHON</a></li>
-                            <li><a href="#">JAVA</a></li>
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">JAVASCRIPT</a></li>
-                            <li><a href="#">CSS</a></li>
-                            <li class="viewpage"><a href="/pages/page.html" target="_blank">View All Courses</a></li>
-                        </ul>
+                    <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                    <div id="navtext-content2" class="navtext-content">
+                        <a href="#">PYTHON</a>
+                        <a href="#">JAVA</a>
+                        <a href="#">HTML</a>
+                        <a href="#">JAVASCRIPT</a>
+                        <a href="#">CSS</a>
+                        <p class="view-courses"><a href="pages/page.html">View All Courses</a></p>
                     </div>
                 </div>
                 <div class="login-btn">
-                    <button class="log-in"><p>LOG IN</p></button>
+                    <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
                 </div>
                 <div class="searchbar">
                     <form action="https://www.google.com/">
                         <input type="text" placeholder="Search..." class="searchbar-inp">
                     </form>
                     <button><i class="material-icons">search</i></button>                                       
+                </div>
+                <div class="mobileview">
+                    <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                    <div id="mobile-navigation" class="mobile-navigation">
+                        <button class="mobnav-drop" onclick="mobNav1()">COURSES<i class="fa fa-caret-down"></i></button>
+                        <div class="mobnav-drop-content" id="mobnav-drop-content1">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <p class="mobdrop"><a href="pages/page.html" class="view-courses">View All Courses</a></p>
+                        </div>
+                        <button class="mobnav-drop" onclick="mobNav2()">EXERCISES<i class="fa fa-caret-down"></i></button>
+                        <div class="mobnav-drop-content" id="mobnav-drop-content2">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <p class="mobdrop"><a href="pages/page.html" class="view-courses">View All Courses</a></p>
+                        </div>
+                        <a href="#" onclick="toggleForm()">LOG IN</a>
+                    </div>
                 </div>
             </nav>
             </div>
@@ -78,54 +98,43 @@
 
         <!-- Body -->
 
-        <section class="blurBody">
+        <section class="body1" id="blurbody">
+            <section>
             <h2>START YOUR CAREER IN WEB DEVELOPMENT</h2>
                 <!-- Carousel -->
             
-                <div class="vidcar" id="vidBlur">
-                
+                <div class="vidcar" id="vidblur" ontouchstart="touchstart(event)" ontouchmove="touchmove(event)" ontouchend="touchend()">
                     <button class="carbutt carouselbuttonleft ishidden">
-                        <img src="images/left.png" alt="">
+                        <img src="images/left-circle-arrow.png" alt="">
                     </button>
-                
                     <div class="vidcarcontainer">
                         <ul class="vidcartrack">
-
                             <li class="col-md-12 currentslide">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/UB1O30fR-EE" alt="" allowfullscreen></iframe>
                             </li>
-
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/yfoY53QXEnI" alt="" allowfullscreen></iframe>
                             </li> 
-
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/hdI2bqOjy3c" alt="" allowfullscreen></iframe>
-                            </li>
-                            
+                            </li>                    
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/hdI2bqOjy3c" allowfullscreen></iframe>
                             </li>
-
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/w7ejDZ8SWv8" allowfullscreen></iframe>
                             </li>
-
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/mTz0GXj8NN0" allowfullscreen></iframe>
                             </li>
-
                             <li class="col-md-12">
                                 <iframe class="carouselvids" src="https://www.youtube.com/embed/qZXt1Aom3Cs" allowfullscreen></iframe>
                             </li>
-                        
                         </ul>
                     </div>
-                    
                     <button class="carbutt carouselbuttonright">
-                        <img src="images/right.png" alt="">
+                        <img src="images/right-circle-arrow.png" alt="">
                     </button>
-
                     <div class="carouselnavigator">
                         <button class="carouselindicator currentslide"></button>
                         <button class="carouselindicator"></button>
@@ -195,13 +204,14 @@
                     </ul>
                 </div>
             </div>
+            </section>
         </section>
 
         <!-- /Body -->
         
         <!-- Footer -->
  
-        <footer id="blurFooter">
+        <footer id="blurfooter">
             <div class="foot-container">
                 <div class="foot-row">
                     <div class="foot-col">
@@ -253,16 +263,13 @@
         <!-- /Script -->
         <!--Pop-up Form-->
                 
-        <div class="form-popup" id="myForm">
+        <div class="form-popup" id="myform">
             <form action="/action_page.php" class="form-container">
             <h1>Login</h1>
-        
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-        
+            <input type="text" placeholder="Enter Email" name="email" required>  
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
-        
             <button type="submit" class="btn">Login</button>
             <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
             </form>
