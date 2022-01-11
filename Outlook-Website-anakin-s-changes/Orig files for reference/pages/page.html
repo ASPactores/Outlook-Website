@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Outlook! Course Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="pagecss.css">
+    </head>
+    <body>
+
+    <!-- Header -->
+
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="../index.html">
+                        <img src="../images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+            <nav>
+                <div class="courses">
+                    <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                    <div id="navtext-content1" class="navtext-content">
+                        <a href="#">PYTHON</a>
+                        <a href="#">JAVA</a>
+                        <a href="#">HTML</a>
+                        <a href="#">JAVASCRIPT</a>
+                        <a href="#">CSS</a>
+                    </div>
+                </div>
+                <div class="exercises">
+                    <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                    <div id="navtext-content2" class="navtext-content">
+                        <a href="#">PYTHON</a>
+                        <a href="#">JAVA</a>
+                        <a href="#">HTML</a>
+                        <a href="#">JAVASCRIPT</a>
+                        <a href="#">CSS</a>
+                    </div>
+                </div>
+                <div class="login-btn">
+                    <button class="log-in" onclick="toggleForm()">LOG IN</button>
+                </div>
+                <div class="searchbar">
+                    <form action="https://www.google.com/">
+                        <input type="text" placeholder="Search..." class="searchbar-inp">
+                    </form>
+                    <button><i class="material-icons">search</i></button>                                       
+                </div>
+                <div class="mobileview">
+                    <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                    <div id="mobile-navigation" class="mobile-navigation">
+                        <a href="#">PYTHON</a>
+                        <a href="#">JAVA</a>
+                        <a href="#">HTML</a>
+                        <a href="#">JAVASCRIPT</a>
+                        <a href="#">CSS</a>
+                    </div>
+                </div>
+            </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+    
+    <div class = "body1" id="blurbody">
+
+    <!-- Drop-down Topics -->
+        <div class="languages">
+        <button class="collapsible">PYTHON</button>
+        <div class="content">
+            <button class="button buttonblack"><span class="topic-title">TOPIC 1: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class="topic-title">TOPIC 2: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class="topic-title">TOPIC 3: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class="topic-title">TOPIC 4: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <a href="#" class="seemore">SEE MORE</a>        
+        </div>
+        </div>
+
+        <div class="languages">
+        <button class="collapsible">C</button>
+        <div class="content">
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 1: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 2: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 3: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 4: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <a href="#" class="seemore">SEE MORE</a>        
+        </div>
+        </div>
+
+        <div class="languages">
+        <button class="collapsible">C++</button>
+        <div class="content">
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 1: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 2: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 3: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <button class="button buttonblack"><span class = "topic-title">TOPIC 4: </span><br /><span class = "topic-details">Fox jumps over the moon.</span></button>
+            <a href="#" class="seemore">SEE MORE</a>        
+        </div>
+        </div>
+
+    <!-- Drop-down Topics -->
+    
+    </div>
+    
+    <!-- Footer -->
+ 
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="/pages/aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="/pages/aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829;</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved. 
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- /Footer -->
+
+
+    <!-- Javascript -->
+
+    <script src="pagejs.js"></script>
+    
+    <!-- Javascript -->
+
+    <!-- Pop-up Form -->
+
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!-- Pop-up Form -->
+    
+    </body>
+</html>

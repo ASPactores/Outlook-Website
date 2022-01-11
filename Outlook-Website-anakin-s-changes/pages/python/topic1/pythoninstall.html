@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pythoninstallstyle.css">
+    <title>Python Installation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="../../../codemirror/theme/ayu-mirage.css">
+</head>
+<body>
+
+    <!-- /Header -->
+
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="../../../index.html">
+                        <img src="../../../images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+                <nav>
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="../../java/javahome.html">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="../../page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="../../java/javahome.html">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="../../page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>    
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <button class="mobtext mobnav-close" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                            <br />
+                            <button class="mobnav-drop" onclick="mobNav1()">COURSES<i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content1">
+                                <a href="../../java/javahome.html">JAVA</a>
+                                <a href="#">HTML</a>
+                                <a href="#">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../../page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <button class="mobnav-drop" onclick="mobNav2()">EXERCISES<i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content2">
+                                <a href="../../java/javahome.html">JAVA</a>
+                                <a href="#">HTML</a>
+                                <a href="#">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../../page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <a href="#" onclick="toggleForm()">LOG IN</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- /Header -->
+
+    <!-- Body -->
+
+    <section class="body1" id="blurbody">
+        <section>
+            <div class="chap-overview-container">
+                <div class="chap-overview">
+                    <div class="prev-next-btn">
+                        <a href="../pythonhome.html"><button id="prev-lect" class="prev-lect"><span class="material-icons">arrow_left</span>Previous</button></a>
+                    </div>
+                    <div class="chap-name">
+                        <h2>INSTALLATION</h2>
+                    </div>
+                    <div class="prev-next-btn">
+                        <a href="../topic2/pythonsyntax.html"><button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button></a>
+                    </div>
+                </div>
+                <div class="hidden-btn-container">
+                    <div class="hidden-btn">
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button>
+                        </div>
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>Starting Python</h2>
+                            <p>
+                                Many PCs and Macs will have python already installed.<br /><br />
+                                To check if you have python installed on a Windows PC, search in the 
+                                start bar for Python or run the following on the Command Line (cmd.exe):
+                                <br />
+                            </p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="something()">C:\Users\Your Name>python --version</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><br />To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:<br /></p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="editor1(editor)">python --version</textarea>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p>
+                                <br />
+                                If you find that you do not have Python installed on your computer, 
+                                then you can download it for free from the following website: https://www.python.org/
+                                <br /><br />
+                                <strong>Note:</strong> In this tutorial, we will write Java code in a text editor. However, it is possible 
+                                to write Java in an Integrated Development Environment, such as Sublime Text and Python 
+                                IDLE which are particularly useful when managing larger collections of Java files.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>Python Quickstart</h2>
+                            <p>
+                                Python is an interpreted programming language, this means that as a developer you write Python 
+                                (.py) files in a text editor and then put those files into the python interpreter to be executed.
+                                <br /><br />
+                                The way to run a python file is like this on the command line:
+                                <br />
+                            </p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="editor1(editor)">C:\Users\Your Name>python helloworld.py</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <br />
+                                Where "helloworld.py" is the name of your python file.
+                                <br /><br />
+                                Let's write our first Python file, called helloworld.py, which can be done in any text editor.
+                                <br />
+                            </p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="editor1(editor)">print("Hello World!")</textarea>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p>
+                                <br />
+                                Simple as that. Save your file. Open your command line, navigate to the 
+                                directory where you saved your file, and run:
+                                <br />
+                            </p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="editor1(editor)">C:\Users\Your Name>python helloworld.py</textarea>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p><br />The output should read:<br /></p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="editor1(editor)">Hello, World!</textarea>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p><br />Congratulations, you have written and executed your first Python program.</p>
+                        </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>The Python Command Line</h2>
+                            <p>
+                                To test a short amount of code in python sometimes it is quickest and easiest not to write 
+                                the code in a file. This is made possible because Python can be run as a command line itself.<br /><br />
+                                Type the following on the Windows, Mac or Linux command line:
+                                <br />
+                            </p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="something()">
+                                            C:\Users\Your Name>python
+                                            Or, if the "python" command did not work, you can try "py":
+                                            C:\Users\Your Name>py                                            
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p><br />From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="something()">
+                                            C:\Users\Your Name>python
+                                            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+                                            Type "help", "copyright", "credits" or "license" for more information.
+                                            >>> print("Hello, World!")
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><br />Which will write "Hello, World!" in the command line:<br /></p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="something()">
+                                            C:\Users\Your Name>python
+                                            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+                                            Type "help", "copyright", "credits" or "license" for more information.
+                                            Hello, World!
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p><br />Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:<br /></p>
+                            <div class="code-editor-container cmd">
+                                <div class="code-editor-subcontainer">
+                                    <div class="tryit">
+                                    </div>
+                                    <div class="code-editor">
+                                        <textarea class="cmd" id="editor" onload="something()">exit()</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </div>
+                </article>
+            </section>
+        </section>
+        <aside>
+            <div class="side-menu-container" id="side-menu-container">
+                <div class="center-vert">
+                    <div class="side-toggle" id="side-toggle">
+                        <button id="toggle" onclick="show()" title="List of Lessons"><span class="material-icons">arrow_left</span></button>
+                    </div>
+                    <div class="side-menu" id="side-menu">
+                        <ul>
+                            <li>
+                                <div class="sideheading">
+                                    <h3>SIDE MENU</h3>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="show()">&times;</a>
+                                </div>
+                            </li>
+                            <li class="highlighted-side"><a href="../pythonhome.html">Python Home</a></li>
+                            <li><a href="topic1/pythoninstall.html">Python Installation</a></li>
+                            <li><a href="../topic2/pythonsyntax.html">Python Syntax</a></li>
+                            <li><a href="../topic3/pythonvariables.html">Python Variables</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    
+    <!-- Body -->
+
+    <!-- Footer -->
+
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="../../aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="../../aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved.
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script-->
+
+    <script src="pythoninstallscript.js"></script>
+    <script src="../../../codemirror/lib/codemirror.js"></script>
+    <script src="../../../codemirror/mode/python/python.js"></script>
+
+    <!-- /Script -->
+
+    <!--Pop-up Form-->
+            
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Pop-up Form-->
+</body>
+</html>

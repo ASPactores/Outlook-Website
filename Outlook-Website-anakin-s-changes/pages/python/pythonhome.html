@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pythonhomestyle.css">
+    <title>Python Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="../../codemirror/theme/ayu-mirage.css">
+</head>
+<body>
+    <!-- /Header -->
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="../../index.html">
+                        <img src="../../images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+                <nav>
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="../java/javahome.html">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="../page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="../java/javahome.html">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="../page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>    
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <button class="mobtext mobnav-close" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                            <br />
+                            <button class="mobnav-drop" onclick="mobNav1()">COURSES<i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content1">
+                                <a href="../java/javahome.html">JAVA</a>
+                                <a href="#">HTML</a>
+                                <a href="#">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <button class="mobnav-drop" onclick="mobNav2()">EXERCISES<i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content2">
+                                <a href="../java/javahome.html">JAVA</a>
+                                <a href="#">HTML</a>
+                                <a href="#">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <a href="#" onclick="toggleForm()">LOG IN</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- /Header -->
+
+    <!-- Body -->
+
+    <section class="body1" id="blurbody">
+        <section>
+            <div class="chap-overview-container">
+                <div class="chap-overview">
+                    <div class="prev-next-btn">
+                        <a href="../page.html"><button id="prev-lect" class="prev-lect"><span class="material-icons">arrow_left</span>Previous</button></a>
+                    </div>
+                    <div class="chap-name">
+                        <h2>PYTHON</h2>
+                    </div>
+                    <div class="prev-next-btn">
+                        <a href="topic1/pythoninstall.html"><button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button></a>
+                    </div>
+                </div>
+                <div class="hidden-btn-container">
+                    <div class="hidden-btn">
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button>
+                        </div>
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>Python</h2>
+                            <p>
+                                Python is a popular programming language.<br /><br />
+                                Python can be used on a server to create web applications.<br /><br />
+                                For every topic covered, you may test out coding yourself along 
+                                with Exercises that will challenge you when it comes to your knowledge 
+                                on the lesson discussed.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>What is Python?</h2>
+                            <p>
+                                Python is a popular programming language. It was created 
+                                by Guido van Rossum, and released in 1991.<br /><br />
+                                It is used for:
+                            </p>
+                            <ul>
+                                <li>web development (server-side),
+                                </li>
+                                <li>software development,</li>
+                                <li>mathematics,</li>
+                                <li>system scripting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>What can Python Do?</h2>
+                            <ul>
+                                <li>Python can be used on a server to create web applications.</li>
+                                <li>Python can be used alongside software to create workflows.</li>
+                                <li>Python can connect to database systems. It can also read and modify files.</li>
+                                <li>Python can be used to handle big data and perform complex mathematics.</li>
+                                <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>Why Python?</h2>
+                            <ul>
+                                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                                <li>Python has a simple syntax similar to the English language.</li>
+                                <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                                <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                                <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>Good to Know</h2>
+                            <p>
+                                The most recent major version of Python is Python 3, which we 
+                                shall be using in this tutorial. However, Python 2, although not 
+                                being updated with anything other than security updates, is still 
+                                quite popular. In this tutorial Python will be written in a text 
+                                editor. <br /><br />It is possible to write Python in an Integrated Development 
+                                Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are 
+                                particularly useful when managing larger collections of Python files.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>Python Syntax Compared to Other Programming Languages</h2>
+                            <p>
+                                Python was designed for readability, and has some similarities to the English 
+                                language with influence from mathematics.<br /><br />
+                                Python uses new lines to complete a command, as opposed to other programming languages 
+                                which often use semicolons or parentheses.<br /><br />
+                                Python relies on indentation, using whitespace, to define scope; such as the scope of loops, 
+                                functions and classes. 
+                                Other programming languages often use curly-brackets for this purpose.  
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <aside>
+            <div class="side-menu-container" id="side-menu-container">
+                <div class="center-vert">
+                    <div class="side-toggle" id="side-toggle">
+                        <button id="toggle" onclick="show()" title="List of Lessons"><span class="material-icons">arrow_left</span></button>
+                    </div>
+                    <div class="side-menu" id="side-menu">
+                        <ul>
+                            <li>
+                                <div class="sideheading">
+                                    <h3>SIDE MENU</h3>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="show()">&times;</a>
+                                </div>
+                            </li>
+                            <li class="highlighted-side"><a href="pythonhome.html">Python Home</a></li>
+                            <li><a href="topic1/pythoninstall.html">Python Installation</a></li>
+                            <li><a href="topic2/pythonsyntax.html">Python Syntax</a></li>
+                            <li><a href="topic3/pythonvariables.html">Python Variables</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    
+    <!-- Body -->
+
+    <!-- Footer -->
+
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="../aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="../aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved.
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script-->
+
+    <script src="pythonhomescript.js"></script>
+    <script src="../../codemirror/lib/codemirror.js"></script>
+    <script src="../../codemirror/mode/python/python.js"></script>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById('editor'),
+        {
+            mode: "python",
+            theme: "ayu-mirage",
+            lineNumbers: true
+        });
+        editor.setSize("100%", "100")
+
+        var output = CodeMirror.fromTextArea(document.getElementById('output'),
+        {
+            mode: "python",
+            theme: "ayu-mirage",
+            lineNumbers: true
+        });
+        editor.setSize("100%", "100")
+    </script>
+
+    <!-- /Script -->
+
+    <!--Pop-up Form-->
+            
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Pop-up Form-->
+</body>
+</html>

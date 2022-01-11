@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lecturestyle.css">
+    <title>JS Fundamentals Part 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- /Header -->
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="/index.html">
+                        <img src="/images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+                <nav>
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- /Header -->
+
+    <!-- Body -->
+
+    <section class="body1" id="blurbody">
+        <section>
+            <div class="chap-overview-container">
+                <div class="chap-overview">
+                    <div class="prev-next-btn">
+                        <a href="/pages/lectures/javascript/fundamentals-part1/lecture.html"><button id="prev-lect" class="prev-lect"><span class="material-icons">arrow_left</span>Previous</button></a>
+                    </div>
+                    <div class="chap-name">
+                        <h2>FUNDAMENTALS PART 2</h2>
+                    </div>
+                    <div class="prev-next-btn">
+                        <a href="/pages/page.html"><button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button></a>
+                    </div>
+                </div>
+                <div class="hidden-btn-container">
+                    <div class="hidden-btn">
+                        <div class="prev-next-btn-mini">
+                            <a href="/pages/lectures/javascript/fundamentals-part1/lecture.html"><button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button></a>
+                        </div>
+                        <div class="prev-next-btn-mini">
+                            <a href="/pages/page.html"><button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>INTRODUCTION</h2>
+                            <p>There are a few extremely common types of data that you will encounter in JavaScript, and these fundamentals lessons will give us a really strong foundation in all of them. Before we start digging deep, however, this <span><a href="https://javascript.info/types">article</a></span> will give you a quick overview of the most common ones.</p>
+                            <h2>LEARNING OUTCOMES</h2>
+                            <p>By the end of this lesson, you should be able to:</p>
+                            <ul>
+                                <li><p>Name the eight data types in JavaScript.</p></li>
+                                <li><p>Understand the difference between single, double, and backtick quotes.</p></li>
+                                <li><p>Embed a variable/expression in a string.</p></li>
+                                <li><p>Define what a method is.</p></li>
+                                <li><p>Name the three logical operators.</p></li>
+                                <li><p>Understand what the comparison operators are.</p></li>
+                                <li><p>Understand what conditionals are.</p></li>
+                                <li><p>Understand what nesting is.</p></li>
+                                <li><p>Understand what truthy and falsy values are.</p></li>
+                            </ul>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>Strings</h2>
+                            <p>Depending on what kind of work you’re doing, you might end up working more with pieces of text rather than numbers. A string is simply a piece of text… and is a fundamental building block of the language.</p>
+                            <ol>
+                                <li>Read and code along with <span><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings">yet another MDN tutorial</a></span> on the topic.</li>
+                                <li>Go through <span><a href="https://www.w3schools.com/js/js_string_methods.asp">this lesson</a></span> to learn a bit more about what you can do with strings… be sure to take a peek at the <span><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">String Reference</a></span> page near the bottom, and do the exercises at the end!</li>
+                                <li>Vocabulary time: a <span>method</span> is a bit of functionality that is built into the language or into specific data types. In the <span><a href="https://www.w3schools.com/js/js_string_methods.asp">previous W3Schools exercise</a></span>, you learned a few methods that can be used on strings, such as <span>indexOf</span> and <span>search</span>. An exhaustive list of methods that can be used on strings can be found <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">here</a></span>.</li>
+                            </ol>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>Conditionals</h2>
+                            <p>Now it’s time for the fun stuff… So far we haven’t done much with our programming that you couldn’t do with simple math skills. Sure, we’ve told our computer how to do the math, so that makes it quicker, but the essence of programming is teaching the computer how to make decisions in order to do more involved things. Conditionals are how we do that.</p>
+                            <ol>
+                                <li>Step one in learning about conditionals is making sure you have a good grasp on <span><a href="http://javascript.info/comparison">comparison</a></span></li>
+                                <li><span><a href="https://www.w3schools.com/js/js_if_else.asp">This tutorial</a></span> is a great first glance at conditionals in JavaScript.</li>
+                                <li><span><a href="http://javascript.info/logical-operators">This tutorial</a></span> will teach you about logical operators.</li>
+                                <li><span><a href="http://javascript.info/ifelse">This article</a></span> covers the same basic concept (read through it as a review!) and - more importantly - offers the usual ‘tasks’ at the bottom of the page!</li>
+                                <li><span><a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript">This article</a></span> covers the same basic concept (read through it as a review!) and - more importantly - offers the usual ‘tasks’ at the bottom of the page!</li>
+                                <li><span><a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascripthttps://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript">This tutorial</a></span> teaches you about the <span>switch</span> statement, which comes in handy when you have multiple conditions.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <div class="mini-bibliography">
+                                <h3>The article above was taken from:</h3>
+                                <p><a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-2">THE ODIN PROJECT</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <aside>
+            <div class="side-menu-container" id="side-menu-container">
+                <div class="center-vert">
+                    <div class="side-toggle" id="side-toggle">
+                        <button id="toggle" onclick="show()" title="List of Lessons"><span class="material-icons">arrow_left</span></button>
+                    </div>
+                    <div class="side-menu" id="side-menu">
+                        <ul>
+                            <li>
+                                <div class="sideheading">
+                                    <h3>SIDE MENU</h3>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="show()">&times;</a>
+                                </div>
+                            </li>
+                            <li><a href="/pages/lectures/javascript/fundamentals-part1/lecture.html">Fundamentals Part 1</a></li>
+                            <li><a href="/pages/lectures/javascript/fundamentals-part2/lecture.html">Fundamentals Part 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    
+    <!-- Body -->
+
+    <!-- Footer -->
+
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="../aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="../aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829;</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved.
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script-->
+
+    <script src="lecturescript.js"></script>
+
+    <!-- /Script -->
+
+    <!--Pop-up Form-->
+            
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Pop-up Form-->
+</body>
+</html>

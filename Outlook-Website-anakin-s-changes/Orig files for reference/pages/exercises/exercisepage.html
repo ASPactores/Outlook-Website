@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercisestyle.css">
+    <title>Exercise Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="/codemirror/theme/ayu-mirage.css">
+</head>
+<body>
+    <!-- /Header -->
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="../../index.html">
+                        <img src="../../images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+                <nav>
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <a href="#">PYTHON</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="#">CSS</a>
+                            <a href="../pages/page.html">View All Courses</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- /Header -->
+
+    <!-- Body -->
+
+    <section class="body1" id="blurbody">
+        <div class="lecture-title">
+            <h1>PYTHON EXERCISES</h1>
+        </div>
+        <div class="content-container">
+            <div class="test-content" id="test-content">
+                <div class="side-toggle" id="side-toggle">
+                    <button id="toggle" onclick="show()" title="List of Problems"><span class="material-icons">arrow_right</span></button>
+                </div>
+                <div class="toggle-window">
+                    <section class="test-box">
+                        <div class="test-question">
+                            <h3>Challenge #1</h3>
+                            <p>Place some challenges here. This will test the student's learning progress.</p>
+                        </div>
+                    </section>
+                    <section class="test-box">
+                        <div class="test-question">
+                            <h3>Challenge #1</h3>
+                            <p>Place some challenges here. This will test the student's learning progress.</p>
+                        </div>
+                    </section>
+                    <section class="test-box">
+                        <div class="test-question">
+                            <h3>Challenge #1</h3>
+                            <p>Place some challenges here. This will test the student's learning progress.</p>
+                        </div>
+                    </section>
+                    <section class="test-box">
+                        <div class="test-question">
+                            <h3>Challenge #1</h3>
+                            <p>Place some challenges here. This will test the student's learning progress.</p>
+                        </div>
+                    </section>
+                    <section class="test-box">
+                        <div class="test-question">
+                            <h3>Challenge #1</h3>
+                            <p>Place some challenges here. This will test the student's learning progress.</p>
+                        </div>
+                    </section>
+                    <section class="test-box">
+                        <div class="test-question">
+                            <h3>Challenge #1</h3>
+                            <p>Place some challenges here. This will test the student's learning progress.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="ide-container">
+                <div class="ide-outerbox">
+                    <div class="ide-innerbox">
+                        <div class="code-editor">
+                            <textarea id="output">print("Hello,World!")</textarea>
+                        </div>
+                        <div class="run-code">
+                            <button id="run-code">RUN CODE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-outerbox">
+                    <div class="output-innerbox">
+                        <div class="output">
+                            <h3>Output:</h3>
+                        </div>
+                        <div class="code-editor">
+                            <textarea id="editor">Hello World</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body -->
+
+    <!-- Footer -->
+
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="/pages/aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="/pages/aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved. 
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script-->
+    
+    <script src="exercisescript.js"></script>
+    <script src="/codemirror/lib/codemirror.js"></script>
+    <script src="/codemirror/mode/python/python.js"></script>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById('editor'),
+        {
+            mode: "python",
+            theme: "ayu-mirage",
+            lineNumbers: true
+        });
+        editor.setSize("100%", "400")
+
+        var output = CodeMirror.fromTextArea(document.getElementById('output'),
+        {
+            mode: "python",
+            theme: "ayu-mirage",
+            lineNumbers: true,
+        });
+        editor.setSize("100%", "100")
+    </script>
+    
+    <!--/Script-->
+
+    <!--Pop-up Form-->
+            
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Pop-up Form-->
+
+</body>
+</html>

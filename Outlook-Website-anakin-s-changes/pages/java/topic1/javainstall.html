@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javainstallstyle.css">
+    <title>Java Installation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/code-display/prism.css">
+</head>
+<body>
+
+    <!-- /Header -->
+
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="../../../index.html">
+                        <img src="../../../images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+                <nav>
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="../../java/javahome.html">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="../../page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="../../java/javahome.html">JAVA</a>
+                            <a href="#">HTML</a>
+                            <a href="#">JAVASCRIPT</a>
+                            <a href="../../page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>    
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <button class="mobnav-drop" onclick="mobNav1()">COURSES<i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content1">
+                                <a href="../../java/javahome.html">JAVA</a>
+                                <a href="#">HTML</a>
+                                <a href="#">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../../page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <button class="mobnav-drop" onclick="mobNav2()">EXERCISES<i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content2">
+                                <a href="../../java/javahome.html">JAVA</a>
+                                <a href="#">HTML</a>
+                                <a href="#">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../../page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <a href="#" onclick="toggleForm()">LOG IN</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- /Header -->
+
+    <!-- Body -->
+
+    <section class="body1" id="blurbody">
+        <section>
+            <div class="chap-overview-container">
+                <div class="chap-overview">
+                    <div class="prev-next-btn">
+                        <a href="../javahome.html"><button id="prev-lect" class="prev-lect"><span class="material-icons">arrow_left</span>Previous</button></a>
+                    </div>
+                    <div class="chap-name">
+                        <h2>INSTALLATION</h2>
+                    </div>
+                    <div class="prev-next-btn">
+                        <a href="../topic2/javasyntax.html"><button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button></a>
+                    </div>
+                </div>
+                <div class="hidden-btn-container">
+                    <div class="hidden-btn">
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button>
+                        </div>
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>HOW TO START WITH JAVA</h2>
+                            <p>
+                                Some PCs might have Java already installed.<br /><br />
+                                To check if you have Java installed on a Windows PC, search in the
+                                start bar for Java or type the following in Command Prompt (cmd.exe):
+                            </p>
+                            <div class="code-editor-subcontainer">
+                                <div class="code-editor">
+                                    <pre><code id="code" class="language-javascript">
+                                        C:\Users\Your Name>java -version
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <p><br />If Java is installed, you will see something like this (depending on version):</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-javascript">
+                                            java version "11.0.1" 2018-10-16 LTS
+                                            Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
+                                            Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <br />If you do not have Java installed on your computer, 
+                                you can download it for free at oracle.com.<br /><br />
+                                <strong>Note:</strong> In this tutorial, we will write Java code in a 
+                                text editor. However, it is possible to write Java in an 
+                                Integrated Development Environment, such as IntelliJ IDEA, 
+                                Netbeans or Eclipse, which are particularly useful when 
+                                managing larger collections of Java files.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>SETUP FOR WINDOWS</h2>
+                            <p>To install Java on Windows:</p>
+                            <ol>
+                                <li>Control Panel > System and Security > System > Advanced System Settings)</li>
+                                <li>Click on the "Environment variables" button under the "Advanced" tab</li>
+                                <li>Then, select the "Path" variable in System variables and click on the "Edit" button</li>
+                                <li>Click on the "New" button and add the path where Java is installed, followed by \bin. 
+                                    By default, Java is installed in C:\Program Files\Java\jdk-11.0.1\bin
+                                    Then, click "OK", and save the settings
+                                    </li>
+                                <li>At last, open Command Prompt (cmd.exe) and type java 
+                                    -version to see if Java is running on your machine</li>
+                            </ol>
+                            <p>
+                                W3Schools used the command prompt (cmd.exe) to initialize your 
+                                first test code. For demonstration processes, we will be using that as well.
+                            </p>
+                        </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>JAVA QUICKSTART</h2>
+                            <p>
+                                In Java, every application begins with a class name, and that class must match the filename.<br /><br />
+                                Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad).<br /><br />
+                                The file should contain a "Hello World" message, which is written with the following code:    
+                            </p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-javascript">
+                                            public class Main {
+                                                public static void main(String[] args) {
+                                                System.out.println("Hello World");
+                                                }
+                                            }
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p>
+                                <br />Save the code in Notepad as "Main.java". Open Command Prompt (cmd.exe), 
+                                navigate to the directory where you saved your file, and type "javac Main.java":
+                            </p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-javascript">
+                                            C:\Users\Your Name>javac Main.java
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p>
+                                <br />This will compile your code. If there are no errors in the code, 
+                                the command prompt will take you to the next line. Now, type "java Main" 
+                                to run the file:
+                            </p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-javascript">
+                                            C:\Users\Your Name>java Main
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p><br />The output should read:</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-javascript">
+                                            Hello World
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p><br />Congratulations on executing your first Java program.</p>
+                        </div>
+                </article>
+            </section>
+        </section>
+        <aside>
+            <div class="side-menu-container" id="side-menu-container">
+                <div class="center-vert">
+                    <div class="side-toggle" id="side-toggle">
+                        <button id="toggle" onclick="show()" title="List of Lessons"><span class="material-icons">arrow_left</span></button>
+                    </div>
+                    <div class="side-menu" id="side-menu">
+                        <ul>
+                            <li>
+                                <div class="sideheading">
+                                    <h3>SIDE MENU</h3>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="show()">&times;</a>
+                                </div>
+                            </li>
+                            <li class="highlighted-side"><a href="../javahome.html">Java Home</a></li>
+                            <li><a href="topic1/javainstall.html">Java Installation</a></li>
+                            <li><a href="../topic2/javasyntax.html">Java Syntax</a></li>
+                            <li><a href="../topic3/javavariables.html">Java Variables</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    
+    <!-- Body -->
+
+    <!-- Footer -->
+
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="../../aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="../../aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved.
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script-->
+
+    <script src="javainstallscript.js"></script>
+    <script src="/code-display/prism.js"></script>
+
+    <!-- /Script -->
+
+    <!--Pop-up Form-->
+            
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Pop-up Form-->
+</body>
+</html>
