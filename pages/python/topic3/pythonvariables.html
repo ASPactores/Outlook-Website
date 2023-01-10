@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pythonvariablestyle.css">
+    <link rel="stylesheet" href="../../lectures/lecturestyle.css">
+    <title>Python Variables</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/pages/lectures/lecturestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../code-display/prism.css">
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="../../../index.html">
+                        <img src="../../../images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+                <nav id="top">
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="../pythonhome.html">PYTHON</a>
+                            <a href="../../java/javahome.html">JAVA</a>
+                            <a href="../../lectures/html/intro-to-html/lecture.html">HTML</a>
+                            <a href="../../lectures/javascript/fundamentals-part1/lecture.html">JAVASCRIPT</a>
+                            <a href="../../page.html">View All Courses</a>
+                        </div>
+                    </div>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="../../exercises/python/exercisepage.html">PYTHON</a>
+                            <a href="../../exercises/java/exercisepage.html">JAVA</a>
+                            <a href="../../exercises/javascript/exercisepage.html">JAVASCRIPT</a>
+                        </div>
+                    </div>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <button class="mobtext mobnav-close" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                            <br />
+                            <button class="mobnav-drop" onclick="mobNav1()">COURSES <i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content1">
+                                <a href="../pythonhome.html">PYTHON</a>
+                                <a href="../../java/javahome.html">JAVA</a>
+                                <a href="../../lectures/html/intro-to-html/lecture.html">HTML</a>
+                                <a href="../../lectures/javascript/fundamentals-part1/lecture.html">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../../page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <button class="mobnav-drop" onclick="mobNav2()">EXERCISES <i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content2">
+                                <a href="../../exercises/python/exercisepage.html">PYTHON</a>
+                                <a href="../../exercises/java/exercisepage.html">JAVA</a>
+                                <a href="../../exercises/javascript/exercisepage.html">JAVASCRIPT</a>
+                            </div>
+                            <a href="#" onclick="toggleForm()">LOG IN</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- /Header -->
+
+    <!-- Body -->
+
+    <section class="body1" id="blurbody">
+        <section>
+            <div class="chap-overview-container">
+                <div class="chap-overview">
+                    <div class="prev-next-btn">
+                        <a href="../topic2/pythonsyntax.html"><button id="prev-lect" class="prev-lect"><span class="material-icons">arrow_left</span>Previous</button></a>
+                    </div>
+                    <div class="chap-name">
+                        <h2>VARIABLES</h2>
+                    </div>
+                    <div class="prev-next-btn">
+                        <a href="../../page.html"><button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button></a>
+                    </div>
+                </div>
+                <div class="hidden-btn-container">
+                    <div class="hidden-btn">
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button>
+                        </div>
+                        <div class="prev-next-btn-mini">
+                            <button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>Variables</h2>
+                            <p>
+                                Python is a dynamic programming language. As such, you don't need 
+                                variable types to declare variables. A variable is created the moment 
+                                you first assign a value to it.
+                            </p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-python">
+                                            x = 5
+                                            y = "John" 
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.<br /></p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-python">
+                                            x = 4       # x is of type int
+                                            x = "Sally" # x is now of type str   
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
+                            <h2>Casting</h2>
+                            <p>If you want to specify the data type of a variable, this can be done with casting.<br /></p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-python">
+                                            x = str(3)    # x will be '3'
+                                            y = int(3)    # y will be 3
+                                            z = float(3)  # z will be 3.0   
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
+                            <h2>Get the Type</h2>
+                            <p>You can get the data type of a variable with the type() function.</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-python">
+                                            x = 5
+                                            y = "John"
+                                            type(x)  
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
+                            <h2>Single or Double Quotes?</h2>
+                            <p>String variables can be declared either by using single or double quotes:</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-python">
+                                            x = "John"
+                                            # is the same as
+                                            x = 'John'
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
+                            <h2>Case-Sensitive</h2>
+                            <p>Variable names are case-sensitive.</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-python">
+                                            a = 4
+                                            A = "Sally"
+                                            #A will not overwrite a
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="go-top-container">
+                <a href="#top"><img src="../../../images/up-arrow.png"></a>
+            </div>
+        </section>
+        <aside>
+            <div class="side-menu-container" id="side-menu-container">
+                <div class="center-vert">
+                    <div class="side-toggle" id="side-toggle">
+                        <button id="toggle" onclick="show()" title="List of Lessons"><span class="material-icons">arrow_left</span></button>
+                    </div>
+                    <div class="side-menu" id="side-menu">
+                        <ul>
+                            <li>
+                                <div class="sideheading">
+                                    <h3>SIDE MENU</h3>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="show()">&times;</a>
+                                </div>
+                            </li>
+                            <li class="highlighted-side"><a href="../pythonhome.html">Python Home</a></li>
+                            <li><a href="topic1/pythoninstall.html">Python Installation</a></li>
+                            <li><a href="../topic2/pythonsyntax.html">Python Syntax</a></li>
+                            <li><a href="../topic3/pythonvariables.html">Python Variables</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    
+    <!-- Body -->
+
+    <!-- Footer -->
+
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="../../aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="../../aboutpage/about.html#privacy-policy">PRIVACY POLICY</a></li>
+                        <li><a href="../../aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved.
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script-->
+
+    <script src="pythonvariablescript.js"></script>
+    <script src="../../../code-display/prism.js"></script>
+
+    <!-- /Script -->
+
+    <!--Pop-up Form-->
+            
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Pop-up Form-->
+</body>
+</html>

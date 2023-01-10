@@ -1,0 +1,994 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    float: left;
+}
+
+body {
+    background-color: white;
+}
+
+/*-----NAVBAR-----*/
+
+.whole-nav {
+    box-shadow: 0px 2px 30px 1px rgba(133, 128, 128, 0.404);
+}
+
+header.active{
+    filter: blur(20px);
+    transition: 0.5s;
+}
+  
+.body1.active{
+    filter: blur(20px);
+    transition: 0.5s;
+}
+  
+footer.active{
+    filter: blur(20px);
+    transition: 0.5s;
+}
+  
+/*-----Header-----*/
+  
+.logo img {
+    height: 50px;
+    margin: 10px 25px 10px 10px;
+}
+  
+.logo-link {
+    float: left;
+}
+  
+.dropdown {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+  
+.courses, .exercises{
+    position: relative;
+    float: left;
+    margin: 25px 20px;
+}
+  
+.navtext-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow-y: hidden;
+    top: 50px;
+}
+
+.navtext-content a{
+    float: none;
+    color: #5D001E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font: bold 15px "Montserrat", sans-serif;
+    transition: 0.3s;
+    border-bottom: 1px solid #5d001d57;
+}
+
+.navtext-content a:hover {
+    background-color: #cecacac5;
+}
+
+.view-courses a {
+    background-color: #5D001E;
+    color: white;
+    text-decoration: underline;
+}
+
+.mobileview {
+    display: none;
+    float: right;
+    padding: 10px;
+}
+
+.burgermenu{
+    color: #5D001E;
+}
+
+.burgermenu:hover {
+    color: rgba(75, 1, 0, 0.5);
+}
+
+
+.mobtext {
+    background: none;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.mobnav-close {
+    position: fixed;
+    margin-left: 15px;
+    top: 14px;
+}
+
+.mobnav-drop-content{
+    display: none;
+}
+
+.mobdrop {
+    text-decoration: underline;
+}
+
+.mobile-navigation {
+    display: none;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 250px;
+    padding: 50px 0px;
+    z-index: 1;
+    overflow-x: hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.mobile-navigation a, .mobnav-drop {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #5D001E;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font: 20px "Poppins", sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(214, 195, 195, 0.795);
+}
+
+.mobile-navigation a:hover, .mobnav-drop:hover {
+    color: rgba(75, 1, 0, 0.3);
+}
+
+.mobnav-drop-content a {
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+.mobnav-drop-content {
+    background-color: #f0f0f393;
+}
+
+.showlist {
+    display: block;
+}
+  
+.navtext {
+    background: none;
+    color: #5D001E;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-right: 15px;
+}
+  
+.navtext:hover {
+    color: rgb(163, 162, 162);
+}
+  
+.searchbar {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+  
+.searchbar .material-icons {
+    font-size: 35px;
+    color: #5D001E;
+    margin: 0px 8px;
+}
+  
+.searchbar-inp {
+    padding: 8px;
+    border: 2px solid #5D001E;
+    border-radius: 10px;
+}
+  
+.searchbar button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.login-btn {
+    float: right;
+    margin: 15px 40px 0px 0px;
+}
+  
+.log-in {
+    padding: 10px 20px;
+    border-radius: 15px;
+    font: bold 18px Helvetica, sans-serif;
+    text-align: center;
+    color: #5D001E;
+    background-color: white;
+    border: 3px solid #5D001E;
+}
+  
+.log-in:hover {
+    background-color: #5D001E;
+    color: white;
+    cursor: pointer;
+}
+
+/*-----Header-----*/
+
+.banner-area {
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(0deg, rgba(93, 0, 29, 0.4), rgba(93, 0, 29, 0.8)), url("./images/laptop.jpg");
+    background-size: cover;
+}
+
+.content-area {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.btn {
+    border-radius: 12px;
+    background-color: rgb(238, 76, 125);
+    border: none;
+    padding: 12px;
+    margin: 12px;
+    font: bold 15px "Source San Pro", sans-serif;
+    color:rgb(255, 255, 255);
+}
+
+.content h1 {
+    font: bold 80px "Bebas Neue", sans-serif;
+    margin: 20px 0x;
+}
+
+.content p {
+    font: 15px "Montserrat", sans-serif;
+    padding: 5px 0px 10px 0px;
+    margin-bottom: 5px;
+    text-justify: inter-word;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color:rgba(93, 0, 29, 0.8);
+    cursor: pointer;    
+}
+
+/* Pop-up Form */
+
+/* The popup form - hidden by default */
+.form-popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    font: bold 18px Helvetica, sans-serif;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.form-popup h1{
+    margin-bottom: 10px;
+}
+  
+.form-popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #5D001E;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 1;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    border: 2px solid #5D001E;
+    background-color: white;
+    color: #5D001E;
+    padding: 10px 20px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 0.8;
+}
+
+/* Pop-up Form */
+
+/*-----Header-----*/
+
+/*-----CONTENT-----*/
+
+.chap-overview-container {
+    min-width: 100%;
+    margin-top: 50px;
+}
+
+.chap-overview {
+    width: 550px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-lect, .next-lect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 5px 8px;
+    border: none;
+    background-color: #5D001E;
+    color: white;
+    font: bold 15px poppins, sans-serif;
+    cursor: pointer;
+}
+
+.hidden-btn-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hidden-btn {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev-lect-mini, .next-lect-mini {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: #5D001E;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-lect-mini span, .next-lect-mini span {
+    font-size: 30px;
+}
+
+.prev-lect:hover, .next-lect:hover {
+    background-color: #8a0d35;
+}
+
+.chap-name h2 {
+    font-family: Helvetica, sans-serif;
+    color: #5D001E;
+}
+
+section {
+    min-width: 100%;
+    margin-top: 30px;
+}
+
+.lesson-container {
+    display: flex;
+    max-width: 55%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.301);
+    flex-wrap: wrap;
+}
+
+section article {
+    margin: 40px 0px;
+}
+
+.lesson-text p, .lesson-text ol li {
+    text-align: justify;
+    font: 18px "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.lesson-text h2, .lesson-text li, 
+.lesson-text a, .lesson-text h3{
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.lesson-text h2, .lesson-text h3 {
+    color: #5e162c;
+}
+
+.lesson-text ul, .lesson-text ol {
+    padding: 5px 0px 0px 30px;
+}
+
+.lesson-text span {
+    color: #e71759;
+}
+
+.lesson-text a {
+    text-align: center;
+}
+
+.mini-bibliography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mini-bibliography p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mini-bibliography a {
+    text-decoration: none;
+    color: #5D001E;
+}
+
+.mini-bibliography a:hover {
+    text-decoration: none;
+    color: #8a0d35;
+}
+
+.lesson-text {
+    padding: 25px 30px 10px 30px;
+    width: 95%;
+}
+
+.lesson-container:hover {
+    box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.411);
+}
+
+/*-----Practice Exercise-----*/
+
+/*.code-editor-container {
+    background-color: #9da9c911;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;   
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
+}
+*/
+.code-editor-container {
+    background-color: #9da9c911;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
+    margin-bottom: 30px;
+}
+
+.code-editor-subcontainer {
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.code-editor {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.code-editor pre {
+    width: 95%;
+}
+
+
+.tryit p {
+    font: bold 20px Helvetica, sans-serif;
+    color:rgb(37, 37, 37);
+}
+
+.code-editor {
+    min-width: 100%;
+    margin-bottom: 15px;
+}
+
+.code-editor textarea {
+    max-width: 100%;
+    margin: auto;
+}
+
+.cmd textarea {
+    height: 50px;
+}
+
+.run-code button {
+    border: none;
+    background-color: #12204d;
+    padding: 8px 14px;
+    font: bold 16px helvetica, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.run-code button:hover {
+    background-color: #415492;
+}
+
+/*----Ouput-----*/
+
+.output-outerbox {
+    margin-top: 20px;
+    background-color: #9da9c927;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;   
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
+}
+
+.output-innerbox {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.output h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 10px 0px 10px 0px;
+}
+
+.CodeMirror {
+    max-width: 778px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+/*-----Footer-----*/
+
+.foot-container {
+    background-color: rgb(37, 37, 37);
+    min-width: 100%;
+    padding: 30px 20px;
+    min-height: 280px;
+}
+
+.foot-row {
+    position: relative;
+}
+
+.foot-col {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 25px;
+}
+
+.foot-col ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-col li {
+    list-style-type: none;
+    font: 13px poppins, sans-serif;
+    font-weight: 700;
+}
+
+.foot-col li a {
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter-header h3 {
+    text-align: center;
+    position: absolute;
+    margin-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font: bold 13px poppins, sans-serif;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+}
+
+.newsletter-container input {
+    padding: 8px;
+    background-color: rgb(37, 37, 37);
+    border: 1px solid white;
+    font: bold 13px poppins, sans-serif;
+    color: white;
+}
+
+.newsletter-container input:focus {
+    outline: none;
+}
+
+.newsletter-button button {
+    border: none;
+    background-color: rgb(238, 76, 125);
+    padding: 10px 25px;
+    font: 600 13px poppins, sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.newsletter-button button:hover {
+    background-color: rgb(93, 0, 29);
+}
+
+.socmed-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 180px;
+}
+
+.socmed-container h3 {
+    color: white;
+    font: bold 13px poppins, sans-serif;
+    text-align: center;
+}
+
+.socmed {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.socmed i {
+    font-size: 25px;
+    margin: 15px 10px 0px;
+    color: white;
+}
+
+.copyright {
+    background-color: rgb(72, 74, 78);
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.where-made, .copyright-symbol {
+    font: bold 13px poppins, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.where-made span {
+    color:rgb(238, 76, 125);
+    font-size: 20px;
+}
+
+/*-----Side Menu -----*/
+
+span {
+    height: 100%;
+}
+
+.side-menu-container {
+    margin: 0;
+    position: fixed;
+    right: -250px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: .4s ease-in-out;
+}
+
+#side-menu-container.active {
+    right: 0;
+}
+
+#side-menu-container.active .side-toggle{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.center-vert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.side-toggle {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.side-toggle button {
+    border: none;
+    background-color: #5D001E;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.side-toggle span {
+    color: white;
+    font-size: 40px;
+}
+
+.side-menu {
+    height: 400px;
+    background-color: white;
+    width: 250px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0px 7px 13px 1px rgb(133 128 128 / 30%);
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.side-menu li {
+    list-style-type: none;
+    font: 18px helvetica, sans-serif;
+    padding: 10px 5px 10px 15px;
+    border-bottom: 1px solid gray;
+}
+
+.sideheading {
+    margin: 0 20px 0 20px;
+    font-size: 30px;
+    display: inline;
+}
+
+.sideheading h3 {
+    font-size: 25px;
+}
+
+/*-----Go Up-----*/
+.go-top-container {
+    float: right;
+    margin: 0 30px 0 0 ;
+    position: relative;
+    bottom: 150px;
+}
+
+.go-top-container img {
+    height: 70px;
+}
+
+@media all and (max-width: 1000px) {
+    .login-btn, .searchbar {
+        display: none;
+    }
+
+    .courses, .exercises {
+        float: right;
+    }
+    
+    .exercises, .courses, .login-btn, .searchbar {
+        display: none;
+    }
+
+    .mobileview {
+        display: block;
+    }
+}
+
+@media all and (max-width: 750px) {
+    /*-----Go Up-----*/
+    .go-top-container {
+        display: none;
+    }
+    
+    /*------Lesson Responsiveness-----*/
+    
+    .lesson-container {
+        display: flex;
+        min-width: 90%;
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.301);
+        flex-wrap: wrap;
+    }
+
+    .side-toggle {
+        width: 35px;
+    }
+
+    .side-toggle span {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .hidden-btn-container {
+        display: flex;
+    }
+
+    .prev-next-btn button {
+        display: none;
+    }
+
+    .chap-overview {
+        width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .code-editor pre {
+        overflow-x: auto;
+    }
+
+    .code-editor-container {
+        width: 100%;
+    }
+
+    /*-----Footer Responsiveness-----*/
+
+    .foot-col ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foot-col li {
+        padding: 15px;
+    }
+
+    .foot-container {
+        height: 420px;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 230px;
+    }
+
+    .newsletter-header h3 {
+        margin-top: 165px;
+        width: 100%;
+    }
+
+    .newsletter-container input {
+        width: 300px;
+    }
+
+    .newsletter-button {
+        margin-top: 15px;
+    }
+    .socmed-container {
+        margin-top: 340px;
+    }
+
+    .socmed a {
+        padding: 0px 20px;
+    }
+
+    .socmed i {
+        font-size: 30px;
+    }
+
+}
+
+@media all and (max-width: 320px) {
+    .code-editor pre {
+        max-width: 250px;
+    }
+}

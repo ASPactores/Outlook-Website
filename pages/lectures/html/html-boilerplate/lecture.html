@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../lectures/lecturestyle.css">
+    <title>HTML Boilerplate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins|Bebas-Neue|Source-Sans-Pro|Open-Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../code-display/prism.css">
+</head>
+<body>
+    <!-- /Header -->
+    <header id="blurhead">
+        <div class="whole-nav">
+            <div class="dropdown">
+                <div class="logo">
+                    <a class="logo-link" href="../../../../index.html">
+                        <img src="../../../../images/logo.png" alt="OUTLOOK!">
+                    </a>
+                </div>            
+                <nav id="top">
+                    <div class="courses">
+                        <button class="navtext" onclick="dropdownApp1()">COURSES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content1" class="navtext-content">
+                            <a href="../../../../pages/python/pythonhome.html">PYTHON</a>
+                            <a href="../../../../pages/java/javahome.html">JAVA</a>
+                            <a href="../../../../pages/lectures/html/intro-to-html/lecture.html">HTML</a>
+                            <a href="../../../../pages/lectures/javascript/fundamentals-part1/lecture.html">JAVASCRIPT</a>
+                            <p class="view-courses"><a href="../../../../pages/page.html">View All Courses</a></p>
+                        </div>
+                    </div>
+                    <div class="exercises">
+                        <button class="navtext" onclick="dropdownApp2()">EXERCISES<i class="material-icons">arrow_drop_down</i></button>
+                        <div id="navtext-content2" class="navtext-content">
+                            <a href="../../../../pages/exercises/python/exercisepage.html">PYTHON</a>
+                            <a href="../../../../pages/exercises/java/exercisepage.html">JAVA</a>
+                            <a href="../../../../pages/exercises/javascript/exercisepage.html">JAVASCRIPT</a>
+                        </div>
+                    </div>
+                    <div class="login-btn">
+                        <button class="log-in" onclick="toggleForm()"><p>LOG IN</p></button>
+                    </div>
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input type="text" placeholder="Search..." class="searchbar-inp">
+                        </form>
+                        <button><i class="material-icons">search</i></button>                                       
+                    </div>
+                    <div class="mobileview">
+                        <button class="mobtext" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                        <div id="mobile-navigation" class="mobile-navigation">
+                            <button class="mobtext mobnav-close" onclick="mobileNav()"><i class="fa fa-bars burgermenu"></i></button>
+                            <br />
+                            <button class="mobnav-drop" onclick="mobNav1()">COURSES <i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content1">
+                                <a href="../../../../pages/python/pythonhome.html">PYTHON</a>
+                                <a href="../../../../pages/java/javahome.html">JAVA</a>
+                                <a href="../../../../pages/lectures/html/intro-to-html/lecture.html">HTML</a>
+                                <a href="../../../../pages/lectures/javascript/fundamentals-part1/lecture.html">JAVASCRIPT</a>
+                                <p class="mobdrop"><a href="../../../../pages/page.html" class="view-courses">View All Courses</a></p>
+                            </div>
+                            <button class="mobnav-drop" onclick="mobNav2()">EXERCISES <i class="fa fa-caret-down"></i></button>
+                            <div class="mobnav-drop-content" id="mobnav-drop-content2">
+                                <a href="../../../../pages/exercises/python/exercisepage.html">PYTHON</a>
+                                <a href="../../../../pages/exercises/java/exercisepage.html">JAVA</a>
+                                <a href="../../../../pages/exercises/javascript/exercisepage.html">JAVASCRIPT</a>
+                            </div>
+                            <a href="#" onclick="toggleForm()">LOG IN</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- /Header -->
+
+    <!-- Body -->
+
+    <section class="body1" id="blurbody">
+        <section>
+            <div class="chap-overview-container">
+                <div class="chap-overview">
+                    <div class="prev-next-btn">
+                        <a href="../../../../pages/lectures/html/intro-to-html/lecture.html"><button id="prev-lect" class="prev-lect"><span class="material-icons">arrow_left</span>Previous</button></a>
+                    </div>
+                    <div class="chap-name">
+                        <h2>HTML BOILERPLATE</h2>
+                    </div>
+                    <div class="prev-next-btn">
+                        <a href="../../../../pages/lectures/html/elements-and-tags/lecture.html"><button id="next-lect" class="next-lect">Next<span class="material-icons">arrow_right</span></button></a>
+                    </div>
+                </div>
+                <div class="hidden-btn-container">
+                    <div class="hidden-btn">
+                        <div class="prev-next-btn-mini">
+                            <a href="../../../../pages/lectures/html/intro-to-html/lecture.html"><button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_left</span></button></a>
+                        </div>
+                        <div class="prev-next-btn-mini">
+                            <a href="../../../../pages/lectures/html/elements-and-tags/lecture.html"><button id="prev-lect" class="prev-lect-mini"><span class="material-icons">arrow_right</span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <h2>INTRODUCTION</h2>
+                            <p>All HTML documents have the same basic structure or boilerplate that needs to be in place before anything useful can be done. In this lesson, we will explore the different parts of this boilerplate and see how it all fits together.</p>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>LEARNING OUTCOMES</h2>
+                            <p>By the end of this lesson, you should be able to:</p>
+                            <ul>
+                                <li><p>Write the basic boilerplate for an HTML document</p></li>
+                                <li><p>Open HTML documents in your browser</p></li>
+                            </ul>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>Creating a HTML FIle</h2>
+                            <p>To demonstrate HTML boilerplate, we first need an HTML file to work with.</p>
+                            <p>Create a new folder on your computer and name it <span>html-boilerplate</span>. Within that folder create a new file and name it <span>index.html.</span></p>
+                            <p>You’re probably already familiar with a lot of different types of files, for example doc, pdf, and image files.</p>
+                            <p>To let the computer know we want to create an HTML file, we need to append the filename with the <span>.html</span> extension as we have done when creating the <span>index.html</span> file.</p>
+                            <p>It is worth noting that we named our HTML file <span>index</span>. We should always name the HTML file that will contain the homepage of our websites <span>index.html</span>. This is because web servers will by default look for an index.html page when users land on our websites - and not having one will cause big problems.</p>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>The DOCTYPE</h2>
+                            <p>Every HTML page starts with a doctype declaration. The doctype’s purpose is to tell the browser what version of HTML it should use to render the document. The latest version of HTML is HTML5, and the doctype for that version is simply <span>&lt;!DOCTYPE html&gt;</span>.</p>
+                            <p>The doctypes for older versions of HTML were a bit more complicated. For example, this is the doctype declaration for HTML4:</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor-special">
+                                        <pre class="code1"><code id="code" class="language-html">
+                                            &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>However, we probably won’t ever want to be using an older version of HTML, and so we’ll always use <span>&lt;!DOCTYPE html&gt;</span>.</p>
+                            <p>Open the <span>index.html</span> file created earlier in your text editor and add <span>&lt;!DOCTYPE html&gt;</span> to the very first line.</p>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>HTML Element</h2>
+                            <p>After we declare the doctype, we need to provide an <span>&lt;html&gt;</span> element. This is what’s known as the root element of the document, meaning that every other element in the document will be a descendant of it.</p>
+                            <p>This becomes more important later on when we learn about manipulating HTML with JavaScript. For now, just know that the HTML element should be included on every HTML document.</p>
+                            <p>Back in the <span>index.html</span> lets add the <span>&lt;html&gt;</span> element by typing out its opening and closing tags, like so:</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-html">
+                                                &lt;!DOCTYPE html&gt;
+                                                &lt;html&gt;
+                                                &lt;/html&gt;
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>Head Element</h2>
+                            <p>The <span>&lt;head&gt;</span> element is where we put important meta-information about our webpages, and stuff required for our webpages to render correctly in the browser. Inside the <span>&lt;head&gt;</span>, we should not use any element that displays content on the webpage.</p>
+                            <h3>Title Element</h3>
+                            <p>One element we should always include in the head of an HTML document is the title element:</p>
+                            <p><span>&lt;title&gt;My First Webpage&lt;/title&gt;</span></p>
+                            <p>The title element is used to give webpages a human-readable title which is displayed in our webpage’s browser tab.</p>
+                            <p>If we didn’t include a title element, the webpage’s title would default to its file name. In our case that would be index.html, which isn’t very meaningful for users; this would make it very difficult to find our webpage if the user has many browser tabs open.</p>
+                            <h3>The Charset Meta Element</h3>
+                            <p>Another important element we should always have in the head element is the meta tag for the charset encoding of the webpage: <span>&lt;meta charset="utf-8"&gt;</span>.</p>
+                            <p>Setting the encoding is very important because it ensures that the webpage will display special symbols and characters from different languages correctly in the browser.</p>
+                            <p>There are many more elements that can go within the head of an HTML document. However, for now it’s only crucial to know about the two elements we have covered here. We will introduce more elements that go into the head as and when we need them throughout the rest of the curriculum.</p>
+                            <p>Back in our index.html, let’s add a head element with a title and a charset meta element within it. The head element goes within the HTML element and should always be the first element under the opening <span>&lt;html&gt;</span> tag:</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-html">
+                                            &lt;!DOCTYPE html&gt;
+
+                                            &lt;html&gt;
+                                            &lt;head&gt;
+                                            &lt;title&gt;My First Webpage&ltrie;/title&gt;
+                                                &lt;meta charset="UTF-8"&gt;
+                                            &lt;/head&gt;
+                                            &lt;/html&gt;
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>Body Element</h2>
+                            <p>The final element needed to complete the HTML boilerplate is the <span>&lt;body&gt;</span> element. This is where all the content that will be displayed to users will go - the text, images, lists, links, and so on.</p>
+                            <p>To complete the boilerplate, add a body element to the index.html file. The body element also goes within the HTML element and is always below the head element, like so:</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-html">
+                                            &lt;!DOCTYPE html&gt;
+                                            &lt;html&gt;
+                                            &lt;head&gt;
+                                                &lt;title>My First Webpage&lt;/title&gt;
+                                                &lt;meta charset="UTF-8"&gt;
+                                            &lt;/head&gt;
+
+                                            &lt;body&gt;
+                                            &lt;/body&gt;
+                                            &lt;/html&gt;
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>Viewing HTML Files in the Browser</h2>
+                            <p>The HTML boilerplate in the index.html file is complete at this point, but how do you view it in the browser? There are a couple of different options:</p>
+                            <ol>
+                                <li>You can drag and drop an HTML file from your text editor into the address bar of your favorite browser.</li>
+                                <li>You can find the HTML file in your file system and then double click it. This will open up the file in the default browser your system uses.</li>
+                                <li>You can use the terminal to open the file in your browser.</li>
+                                    <ul>
+                                        <li><span>Ubuntu</span> - Navigate to the directory containing the file and use <span>firefox index.html</span> or <span>google-chrome index.html</span></li>
+                                        <li><span>macOS</span> - Navigate to the directory containing the file and use open <span>./index.html</span></li>
+                                    </ul>
+                            </ol>
+                            <p>Using one of the methods above, open up the index.html file we have been working on. You’ll notice the screen is blank. This is because we don’t have anything in our body to display.</p>
+                            <p>Back in the index.html file, lets add a heading (more on these later) to the body, and save the file:</p>
+                            <div class="code-editor-container">
+                                <div class="code-editor-subcontainer">
+                                    <div class="code-editor">
+                                        <pre><code id="code" class="language-html">
+                                            &lt;!DOCTYPE html&gt;
+                                            &lt;html&gt;
+                                                &lt;head&gt;
+                                                    &lt;title&gt;My First Webpage&lt;/title&gt;
+                                                    &lt;meta charset="UTF-8"&gt;
+                                                &lt;/head&gt;
+                                            
+                                            &lt;body&gt;
+                                                &lt;h1>Hello World!&lt;/h1&gt;
+                                            &lt;/body&gt;
+                                            &lt;/html&gt;
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Now, if you refresh the page in the browser, you should see the changes take effect, and the heading “Hello World!” will be displayed.</p>
+                        </div>
+                        <div class="lesson-text">
+                            <h2>VSCode Shortcut</h2>
+                            <p>VSCode has a built-in shortcut you can use for generating all the boilerplate in one go. Please note that this shortcut only works while editing a file with the’.html’ extension or a text file with the HTML language already selected. To trigger the shortcut, delete everything in the index.html file and just enter ! on the first line. This will bring up a couple of options. Press the enter key to choose the first one, and voila, you should have all the boilerplate populated for you.</p>
+                            <p>But it’s still good to know how to write the boilerplate yourself in case you find yourself using a text editor like notepad (heaven forbid) which doesn’t have this shortcut. Try not to use the shortcut in your first few HTML projects, so you can build some muscle memory of how to write the boilerplate code.</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="lesson-container">
+                        <div class="lesson-text">
+                            <div class="mini-bibliography">
+                                <h3>The article above was taken from:</h3>
+                                <p><a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/html-boilerplate">THE ODIN PROJECT</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="go-top-container">
+                <a href="#top"><img src="../../../../images/up-arrow.png"></a>
+            </div>
+        </section>
+        <aside>
+            <div class="side-menu-container" id="side-menu-container">
+                <div class="center-vert">
+                    <div class="side-toggle" id="side-toggle">
+                        <button id="toggle" onclick="show()" title="List of Lessons"><span class="material-icons">arrow_left</span></button>
+                    </div>
+                    <div class="side-menu" id="side-menu">
+                        <ul>
+                            <li>
+                                <div class="sideheading">
+                                    <h3>SIDE MENU</h3>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="show()">&times;</a>
+                                </div>
+                            </li>
+                            <li><a href="../../../../pages/lectures/html/intro-to-html/lecture.html">Intro to HTML</a></li>
+                            <li><a href="../../../../pages/lectures/html/html-boilerplate/lecture.html">HTML Boilerplate</a></li>
+                            <li><a href="../../../../pages/lectures/html/elements-and-tags/lecture.html">Elements and Tags</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    
+    <!-- Body -->
+
+    <!-- Footer -->
+
+    <footer id="blurfooter">
+        <div class="foot-container">
+            <div class="foot-row">
+                <div class="foot-col">
+                    <ul>
+                        <li><a href="../../../aboutpage/about.html">ABOUT US</a></li>
+                        <li><a href="../../../aboutpage/about.html#privacy-policy">PRIVACY POLICY</a></li>
+                        <li><a href="../../../aboutpage/about.html#bibliography">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-header">
+                        <h3>Join the newsletter to be updated about new courses.</h3>
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-email">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="newsletter-button">
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="socmed-container">
+                        <h3>FOLLOW US</h3>
+                        <div class="socmed">
+                            <a class="socmed-link" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                            <a class="socmed-link" href="https://www.twitter.com"><i class="fa fa-reddit"></i></a>
+                            <a class="socmed-link" href="https://www.reddit.com"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="where-made">Made in the Philippines with <span>&#9829</span></p>
+            <p class="copyright-symbol">
+                OUTLOOK! All rights reserved.
+                OUTLOOK! does not claim ownership of the course packs used.
+                They belong to their rightful owner.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script-->
+    <script src="../../../../code-display/prism.js"></script>
+    <script src="../../../../pages/lectures/lecturescript.js"></script>
+
+    <!-- /Script -->
+
+    <!--Pop-up Form-->
+            
+    <div class="form-popup" id="myform">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="toggleForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Pop-up Form-->
+</body>
+</html>
