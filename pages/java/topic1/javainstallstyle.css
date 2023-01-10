@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 
-*:focus {
-    outline: 2px dotted rgb(99, 98, 98);
-}
-
 html, body {
-    min-height: 100%;
+    height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -25,6 +22,9 @@ body {
 
 /*-----NAVBAR-----*/
 
+.whole-nav {
+    box-shadow: 0px 2px 30px 1px rgba(133, 128, 128, 0.404);
+}
 
 header.active{
     filter: blur(20px);
@@ -60,17 +60,7 @@ footer.active{
     width: 100%;
     height: auto;
 }
-<<<<<<< HEAD
-
-.navtext-content {
-    position: absolute;
-    opacity: 0;
-    z-index: 2;
-}
-
-=======
   
->>>>>>> footer
 .courses, .exercises{
     position: relative;
     float: left;
@@ -80,29 +70,12 @@ footer.active{
 .navtext-content {
     display: none;
     position: absolute;
-<<<<<<< HEAD
-    left: 0px;
-    background: white;
-    margin-top: 45px;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    border-radius: 5px;
-    pointer-events: none;
-    transition: all 0.4s ease;
-    transform: translateY(-10px);
-=======
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     overflow-y: hidden;
     top: 50px;
->>>>>>> footer
 }
 
 .navtext-content a{
@@ -135,13 +108,12 @@ footer.active{
 
 .burgermenu{
     color: #5D001E;
-    width: 100%;
-
 }
 
 .burgermenu:hover {
     color: rgba(75, 1, 0, 0.5);
 }
+
 
 .mobtext {
     background: none;
@@ -228,75 +200,18 @@ footer.active{
     float: left;
     margin-right: 15px;
 }
-<<<<<<< HEAD
-
-.viewpage {
-    text-decoration: underline;
-    padding-bottom: 5px;
-    background-color: rgba(93, 0, 29, 0.8);
-    color: white;
-}
-
-.viewpage a {
-    color: white;
-}
-
-.navtext:hover {
-    color: rgb(163, 162, 162);
-}
-
-.courses li,
-.exercises li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    font: bold 15px "Source San Pro", sans-serif;
-}
-
-.courses li:hover,
-.exercises li:hover {
-    background-color: rgb(226, 226, 226);
-}
-
-.show {
-    opacity: 1;
-    z-index: 100;
-    position: absolute;
-}
-
-/*
-.courses button:focus + ul,
-.exercises button:focus + ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(0px);
-}
-*/
-
-=======
   
 .navtext:hover {
     color: rgb(163, 162, 162);
 }
   
->>>>>>> footer
 .searchbar {
     float: right;
     display: flex;
     align-items: center;
     margin-top: 22px;
 }
-<<<<<<< HEAD
-
-.searchbar input {
-    font: bold 15px "Source San Pro", sans-serif;
-}
-
-=======
   
->>>>>>> footer
 .searchbar .material-icons {
     font-size: 35px;
     color: #5D001E;
@@ -373,7 +288,7 @@ footer.active{
 
 .content h1 {
     font: bold 80px "Bebas Neue", sans-serif;
-    margin: 20px 0;
+    margin: 20px 0x;
 }
 
 .content p {
@@ -469,325 +384,266 @@ footer.active{
 
 /*-----Header-----*/
 
-/*-----Body-----*/
+/*-----CONTENT-----*/
 
-/*-----Carousel-----*/
-.webdev {
-    margin: 25px;
-<<<<<<< HEAD
-}
-
-.carousel {
-    margin-bottom: 50px;
-=======
->>>>>>> footer
-}
-
-.carousel {
-    margin-bottom: 50px;
-}
-
-.body-container {
-    background-color: #cecacac5;
-}
-
-.body1 {
-    width: 100%;
-    margin: auto;
-    background-color: white;
-}
-
-.body1 h2 {
-    text-align: center;
-    font: bold 30px "Source Sans Pro", sans-serif;
-    color: rgb(93, 0, 29);
-<<<<<<< HEAD
-=======
-    margin: 50px 0px 20px 0px;
->>>>>>> footer
-}
-
-.vidcar {
-    width: 60%;
-    height: 445px;
-    margin: 20px auto 0;
-    position: relative;
-    /*display: flex;
-    overflow-x: scroll;*/
-}
-
-.vidcar.active {
-    filter: blur(20px);
-    transition: 0.5s;
-}
-
-.vidcarcontainer {  
-    position: relative;
-    height: 100%;
-    width:100%;
-    overflow: hidden;
-    padding-top: 0;
-}
-
-.carousel-vids {
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.vidcartrack {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 250ms ease-in;
-}
-
-.col-md-12 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carbutt {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: black;
-    font-size: 50px;
-    border: 0;
-    background-color: transparent;
-}
-.vidcar img {
-    width: 50px;
-    height: 50px;
-}
-.carouselbuttonleft {
-    left: -60px;
-}
-
-.carouselbuttonright {
-    right: -60px;
-}
-
-.carouselnavigator {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.carouselindicator {
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background-color: rgba(134, 16, 16, 0.3);
-    margin: 5px;
-    cursor: pointer;
-}
-
-/*-----PROGRAMMING LANGUAGES-----
-.prog-lang-bg {
+.chap-overview-container {
     min-width: 100%;
-    height: 125px;
-    background-color: rgba(95, 13, 13, 0.781);
-    display: flex;
+    margin-top: 50px;
 }
 
-.prog-lang-container {
+.chap-overview {
+    width: 550px;
     margin: auto;
-}
-
-.prog-lang {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    width: 600px;
-    flex-direction: row;
 }
 
-.prog-lang li {
-    background-color: rgb(238, 76, 125);
-    border: none;
-    padding: 20px 40px;
-    table-layout: fixed;
-    border-collapse: collapse;
-    margin: 20px;
-    list-style-type: none;
-}
-
-.prog-lang li button {
-    background-color: none;
-    border: none;
-    width: 100%;
-}
-
---------------*/
-
-<<<<<<< HEAD
-.prog-overview {
-    width: 100%;
+.prev-lect, .next-lect {
     display: flex;
-    background-color: #5D001E;
-    justify-content: space-around;
-    margin: 20px 0px;
-}
-
-.prog-text-box {
-    background-color: crimson;
-    width: 600px;
-=======
-.prog-overview-container {
-    background-color: #520727;
-    width: 100%;
-    margin: 100px auto;
-}
-
-.prog-overview-container h1 {
-    text-align: center;
-}
-
-.prog-overview {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 40px;
-}
-
-.courses-offered p {
-    text-align: center;
-    font: bold 30px "Source San Pro", sans-serif;
-    color: white;
-    padding: 40px 0px 10px 0px;
-}
-
-.test {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 120px;
+    padding: 5px 8px;
+    border: none;
+    background-color: #5D001E;
+    color: white;
+    font: bold 15px poppins, sans-serif;
+    cursor: pointer;
 }
 
-.prog-text-box {
-    background-color: #cc2746f2;
-    width: 80%;
->>>>>>> footer
-    display: flex;
+.hidden-btn-container {
+    display: none;
     align-items: center;
     justify-content: center;
-    height: 200px;
     margin: 20px;
-    border-radius: 15px;
 }
 
-.prog-text-container ul {
-    text-align: center;
+.hidden-btn {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.prog-text-container li {
-    list-style-type: none;
-}
-
-.prog-text-container h1, .prog-text-container p {
-    font-family: "Source San Pro", sans-serif;
-    color: white;
-<<<<<<< HEAD
-    padding: 5px 5px;
-=======
-    padding: 5px;
->>>>>>> footer
-}
-
-.prog-text-container button a {
-    color: white;
-    text-decoration: none;
-}
-
-.prog-text-container button {
-<<<<<<< HEAD
-    background-color: #5D001E;
-=======
-    background-color: #520727;
->>>>>>> footer
+.prev-lect-mini, .next-lect-mini {
+    width: 100px;
     padding: 10px;
     border: none;
-    font: bold 15px "Source San Pro", sans-serif;
-    border-radius: 10px;
-    width: 200px;
+    background-color: #5D001E;
+    color: white;
     cursor: pointer;
-    margin-top: 30px;
 }
 
-.prog-text-container button:hover {
-<<<<<<< HEAD
-    background-color: #6e0627;
+.prev-lect-mini span, .next-lect-mini span {
+    font-size: 30px;
 }
 
-
-
-/*-----Footer-----*/
-=======
-    background-color: #97172ede;
+.prev-lect:hover, .next-lect:hover {
+    background-color: #8a0d35;
 }
 
-.progress-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0px;
-    box-sizing: border-box;
-}
-
-.progress {
-    width: 500px;
-}
-
-.progress ul {
-    text-align: center;
-}
-
-.progress li {
-    list-style-type: none;
-}
-
-.progress h2 {
-    font: bold 50px "Bebas Neue", sans-serif;
-    margin-bottom: 8px;
+.chap-name h2 {
+    font-family: Helvetica, sans-serif;
     color: #5D001E;
 }
 
-.progress p {
-    font: normal 18px "Helvetica", sans-serif;
-    margin-bottom: 8px;
+section {
+    min-width: 100%;
+    margin-top: 30px;
 }
 
-.progress button {
-    border-radius: 12px;
-    background-color: rgb(238, 76, 125);
+.lesson-container {
+    display: flex;
+    max-width: 55%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.301);
+    flex-wrap: wrap;
+}
+
+section article {
+    margin: 40px 0px;
+}
+
+.lesson-text p, .lesson-text ol li {
+    text-align: justify;
+    font: 18px "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.lesson-text h2, .lesson-text li, 
+.lesson-text a, .lesson-text h3{
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.lesson-text h2, .lesson-text h3 {
+    color: #5e162c;
+}
+
+.lesson-text ul, .lesson-text ol {
+    padding: 5px 0px 0px 30px;
+}
+
+.lesson-text span {
+    color: #e71759;
+}
+
+.lesson-text a {
+    text-align: center;
+}
+
+.mini-bibliography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mini-bibliography p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mini-bibliography a {
+    text-decoration: none;
+    color: #5D001E;
+}
+
+.mini-bibliography a:hover {
+    text-decoration: none;
+    color: #8a0d35;
+}
+
+.lesson-text {
+    padding: 25px 30px 10px 30px;
+    width: 95%;
+}
+
+.lesson-container:hover {
+    box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.411);
+}
+
+/*-----Practice Exercise-----*/
+
+/*.code-editor-container {
+    background-color: #9da9c911;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;   
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
+}
+*/
+.code-editor-container {
+    background-color: #9da9c911;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
+    margin-bottom: 30px;
+}
+
+.code-editor-subcontainer {
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.code-editor {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.code-editor pre {
+    width: 95%;
+}
+
+
+.tryit p {
+    font: bold 20px Helvetica, sans-serif;
+    color:rgb(37, 37, 37);
+}
+
+.code-editor {
+    min-width: 100%;
+    margin-bottom: 15px;
+}
+
+.code-editor textarea {
+    max-width: 100%;
+    margin: auto;
+}
+
+.cmd textarea {
+    height: 50px;
+}
+
+.run-code button {
     border: none;
-    padding: 15px;
-    margin: 12px;
-    font: bold 18px "Source San Pro", sans-serif;
-    color:rgb(255, 255, 255);
+    background-color: #12204d;
+    padding: 8px 14px;
+    font: bold 16px helvetica, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
 }
 
-.progress button:hover {
-    background-color:rgba(93, 0, 29, 0.8);
-    cursor: pointer;    
+.run-code button:hover {
+    background-color: #415492;
+}
+
+/*----Ouput-----*/
+
+.output-outerbox {
+    margin-top: 20px;
+    background-color: #9da9c927;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;   
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px 1px rgba(133, 128, 128, 0.459);
+}
+
+.output-innerbox {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.output h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 10px 0px 10px 0px;
+}
+
+.CodeMirror {
+    max-width: 778px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 /*-----Footer-----*/
 
->>>>>>> footer
 .foot-container {
     background-color: rgb(37, 37, 37);
     min-width: 100%;
@@ -800,11 +656,7 @@ footer.active{
 }
 
 .foot-col {
-<<<<<<< HEAD
-    width: 570px;
-=======
     width: 400px;
->>>>>>> footer
     height: 50px;
     position: absolute;
     top: 50%;
@@ -921,32 +773,106 @@ footer.active{
     font-size: 20px;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 800px) {
-    .carbutt{
-        top: 40%; 
-        transform: translateY(-60%);
-=======
-/*-----Responsiveness-----*/
+/*-----Side Menu -----*/
 
+span {
+    height: 100%;
+}
+
+.side-menu-container {
+    margin: 0;
+    position: fixed;
+    right: -250px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: .4s ease-in-out;
+}
+
+#side-menu-container.active {
+    right: 0;
+}
+
+#side-menu-container.active .side-toggle{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.center-vert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.side-toggle {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.side-toggle button {
+    border: none;
+    background-color: #5D001E;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.side-toggle span {
+    color: white;
+    font-size: 40px;
+}
+
+.side-menu {
+    height: 400px;
+    background-color: white;
+    width: 250px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0px 7px 13px 1px rgb(133 128 128 / 30%);
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.side-menu li {
+    list-style-type: none;
+    font: 18px helvetica, sans-serif;
+    padding: 10px 5px 10px 15px;
+    border-bottom: 1px solid gray;
+}
+
+.sideheading {
+    margin: 0 20px 0 20px;
+    font-size: 30px;
+    display: inline;
+}
+
+.sideheading h3 {
+    font-size: 25px;
+}
+
+/*-----Go Up-----*/
+.go-top-container {
+    float: right;
+    margin: 0 30px 0 0 ;
+    position: relative;
+    bottom: 150px;
+}
+
+.go-top-container img {
+    height: 70px;
+}
 
 @media all and (max-width: 1000px) {
-
-    /*-----Pop up Form Responsiveness-----*/
-
     .login-btn, .searchbar {
         display: none;
     }
+
     .courses, .exercises {
         float: right;
-    }
-    .prog-overview {
-        display: block;
-        padding: 10px 0px;
-    }
-
-    .test {
-        width: 100%;
     }
     
     .exercises, .courses, .login-btn, .searchbar {
@@ -955,122 +881,66 @@ footer.active{
 
     .mobileview {
         display: block;
->>>>>>> footer
     }
 }
 
-.ishidden { display: none; }
-
-.carouselindicator.currentslide {
-    background-color: rgba(95, 13, 13, 0.781);
-}
-/*
-@media screen and (max-width: 1200px) {
-    .carbutt{
-      top: 80%; 
+@media all and (max-width: 750px) {
+    /*-----Go Up-----*/
+    .go-top-container {
+        display: none;
     }
     
-@media screen and (max-width: 1100px) {
-    .carbutt{
-      top: 70%; 
+    /*------Lesson Responsiveness-----*/
+    
+    .lesson-container {
+        display: flex;
+        min-width: 90%;
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: 0px 7px 13px 1px rgba(133, 128, 128, 0.301);
+        flex-wrap: wrap;
     }
 
-@media screen and (max-width: 1000px) {
-    .carbutt{
-      top: 60%; 
+    .side-toggle {
+        width: 35px;
     }
 
-@media screen and (max-width: 900px) {
-    .carbutt{
-        top: 50%; 
-    }
-@media screen and (max-width: 800px) {
-    .carbutt{
-        top: 40%; 
-    }
-
-@media screen and (max-width: 750px) {
-    .carbutt{
-        top: 35%; 
-    }
-
-@media screen and (max-width: 700px) {
-    .carbutt{
-        top: 30%; 
+    .side-toggle span {
+        font-size: 35px;
     }
 }
-*/
 
-<<<<<<< HEAD
-@media screen and (max-width: 700px) {
-    .prog-overview {
-        display: block;
+@media all and (max-width: 600px) {
+
+    .hidden-btn-container {
+        display: flex;
+    }
+
+    .prev-next-btn button {
+        display: none;
+    }
+
+    .chap-overview {
         width: 100%;
     }
 
-    .prog-text-box {
-        width: 100%;
-    }
-}
-=======
-@media all and (max-width: 700px) {
-    
-    /*-----Content Responsiveness------*/
-    .prog-overview {
-        display: block;
-        padding: 10px 0px;
-    }
-
-    .test {
-        width: 100%;
-    }
-}
-
-@media all and (max-width: 800px) {
-
-    .form-popup {
-        width: 90%;
-    }
-    
-    /*-----Content Responsiveness------*/
-    .vidcar {
-        width: 95%;
-    }
-
-    .carbutt {
-        top: 500px;
-    }
-
-    .carbutt img {
-        height: 60px;
-        width: auto;
-    }
-
-    .carouselbuttonleft {
-        left: 0vw;
-    }
-
-    .carouselbuttonright {
-        right: 0vw;
-    }
-
-    .carouselnavigator {
-        padding-top: 25px;
-    }
-
-    .prog-overview-container {
-        margin-top: 140px;
+    body {
+        overflow-x: hidden;
     }
 }
 
 @media all and (max-width: 500px) {
 
-    .content h1 {
-        font-size: 70px;
-        text-align: center;
+    .code-editor pre {
+        overflow-x: auto;
+    }
+
+    .code-editor-container {
+        width: 100%;
     }
 
     /*-----Footer Responsiveness-----*/
+
     .foot-col ul {
         flex-direction: column;
         text-align: center;
@@ -1114,5 +984,11 @@ footer.active{
     .socmed i {
         font-size: 30px;
     }
+
 }
->>>>>>> footer
+
+@media all and (max-width: 320px) {
+    .code-editor pre {
+        max-width: 250px;
+    }
+}
