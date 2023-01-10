@@ -9,7 +9,7 @@
 }
 
 html, body {
-    min-height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -60,17 +60,7 @@ footer.active{
     width: 100%;
     height: auto;
 }
-<<<<<<< HEAD
-
-.navtext-content {
-    position: absolute;
-    opacity: 0;
-    z-index: 2;
-}
-
-=======
   
->>>>>>> footer
 .courses, .exercises{
     position: relative;
     float: left;
@@ -80,29 +70,12 @@ footer.active{
 .navtext-content {
     display: none;
     position: absolute;
-<<<<<<< HEAD
-    left: 0px;
-    background: white;
-    margin-top: 45px;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    border-radius: 5px;
-    pointer-events: none;
-    transition: all 0.4s ease;
-    transform: translateY(-10px);
-=======
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     overflow-y: hidden;
     top: 50px;
->>>>>>> footer
 }
 
 .navtext-content a{
@@ -135,8 +108,6 @@ footer.active{
 
 .burgermenu{
     color: #5D001E;
-    width: 100%;
-
 }
 
 .burgermenu:hover {
@@ -228,75 +199,18 @@ footer.active{
     float: left;
     margin-right: 15px;
 }
-<<<<<<< HEAD
-
-.viewpage {
-    text-decoration: underline;
-    padding-bottom: 5px;
-    background-color: rgba(93, 0, 29, 0.8);
-    color: white;
-}
-
-.viewpage a {
-    color: white;
-}
-
-.navtext:hover {
-    color: rgb(163, 162, 162);
-}
-
-.courses li,
-.exercises li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    font: bold 15px "Source San Pro", sans-serif;
-}
-
-.courses li:hover,
-.exercises li:hover {
-    background-color: rgb(226, 226, 226);
-}
-
-.show {
-    opacity: 1;
-    z-index: 100;
-    position: absolute;
-}
-
-/*
-.courses button:focus + ul,
-.exercises button:focus + ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(0px);
-}
-*/
-
-=======
   
 .navtext:hover {
     color: rgb(163, 162, 162);
 }
   
->>>>>>> footer
 .searchbar {
     float: right;
     display: flex;
     align-items: center;
     margin-top: 22px;
 }
-<<<<<<< HEAD
-
-.searchbar input {
-    font: bold 15px "Source San Pro", sans-serif;
-}
-
-=======
   
->>>>>>> footer
 .searchbar .material-icons {
     font-size: 35px;
     color: #5D001E;
@@ -474,13 +388,6 @@ footer.active{
 /*-----Carousel-----*/
 .webdev {
     margin: 25px;
-<<<<<<< HEAD
-}
-
-.carousel {
-    margin-bottom: 50px;
-=======
->>>>>>> footer
 }
 
 .carousel {
@@ -501,10 +408,7 @@ footer.active{
     text-align: center;
     font: bold 30px "Source Sans Pro", sans-serif;
     color: rgb(93, 0, 29);
-<<<<<<< HEAD
-=======
     margin: 50px 0px 20px 0px;
->>>>>>> footer
 }
 
 .vidcar {
@@ -633,19 +537,6 @@ footer.active{
 
 --------------*/
 
-<<<<<<< HEAD
-.prog-overview {
-    width: 100%;
-    display: flex;
-    background-color: #5D001E;
-    justify-content: space-around;
-    margin: 20px 0px;
-}
-
-.prog-text-box {
-    background-color: crimson;
-    width: 600px;
-=======
 .prog-overview-container {
     background-color: #520727;
     width: 100%;
@@ -679,7 +570,6 @@ footer.active{
 .prog-text-box {
     background-color: #cc2746f2;
     width: 80%;
->>>>>>> footer
     display: flex;
     align-items: center;
     justify-content: center;
@@ -699,11 +589,7 @@ footer.active{
 .prog-text-container h1, .prog-text-container p {
     font-family: "Source San Pro", sans-serif;
     color: white;
-<<<<<<< HEAD
-    padding: 5px 5px;
-=======
     padding: 5px;
->>>>>>> footer
 }
 
 .prog-text-container button a {
@@ -712,11 +598,7 @@ footer.active{
 }
 
 .prog-text-container button {
-<<<<<<< HEAD
-    background-color: #5D001E;
-=======
     background-color: #520727;
->>>>>>> footer
     padding: 10px;
     border: none;
     font: bold 15px "Source San Pro", sans-serif;
@@ -727,14 +609,6 @@ footer.active{
 }
 
 .prog-text-container button:hover {
-<<<<<<< HEAD
-    background-color: #6e0627;
-}
-
-
-
-/*-----Footer-----*/
-=======
     background-color: #97172ede;
 }
 
@@ -787,7 +661,6 @@ footer.active{
 
 /*-----Footer-----*/
 
->>>>>>> footer
 .foot-container {
     background-color: rgb(37, 37, 37);
     min-width: 100%;
@@ -800,11 +673,7 @@ footer.active{
 }
 
 .foot-col {
-<<<<<<< HEAD
-    width: 570px;
-=======
     width: 400px;
->>>>>>> footer
     height: 50px;
     position: absolute;
     top: 50%;
@@ -921,12 +790,6 @@ footer.active{
     font-size: 20px;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 800px) {
-    .carbutt{
-        top: 40%; 
-        transform: translateY(-60%);
-=======
 /*-----Responsiveness-----*/
 
 
@@ -955,7 +818,6 @@ footer.active{
 
     .mobileview {
         display: block;
->>>>>>> footer
     }
 }
 
@@ -1001,18 +863,6 @@ footer.active{
 }
 */
 
-<<<<<<< HEAD
-@media screen and (max-width: 700px) {
-    .prog-overview {
-        display: block;
-        width: 100%;
-    }
-
-    .prog-text-box {
-        width: 100%;
-    }
-}
-=======
 @media all and (max-width: 700px) {
     
     /*-----Content Responsiveness------*/
@@ -1115,4 +965,3 @@ footer.active{
         font-size: 30px;
     }
 }
->>>>>>> footer

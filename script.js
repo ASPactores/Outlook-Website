@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> footer
 const track = document.querySelector('.vidcartrack');
 const slides = Array.from(track.children);
 const prevbutton = document.querySelector('.carouselbuttonleft');
@@ -14,10 +10,6 @@ function dropdownApp() {
     document.getElementById("navtext-content").classList.toggle("show");
 }
 
-<<<<<<< HEAD
-console.log(slideWidth);
-=======
->>>>>>> footer
 /*
 slides[0].style.left = 0;
 slides[1].style.left = slideWidth * 1 + 'px';

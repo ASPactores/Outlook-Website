@@ -13,26 +13,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-<<<<<<< HEAD
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("openButton").style.visibility = "hidden";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("openButton").style.visibility = "visible";
-}
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "dropdown") {
-    x.className += " responsive";
-  } else {
-    x.className = "dropdown";
-  }
-}
-=======
 function toggleForm() {
   var blur1 = document.getElementById('blurhead');
   var blur2 = document.getElementById('blurbody');
@@ -81,4 +61,3 @@ window.onclick = function(e) {
       }
   }
 }
->>>>>>> footer
